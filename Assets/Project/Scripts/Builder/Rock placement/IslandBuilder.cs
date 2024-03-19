@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Tilemaps;
+using Newtonsoft.Json;
+using System.IO;
+
 
 
 /// <summary>
@@ -155,19 +158,19 @@ public class IslandBuilder : MonoBehaviour
         }
 
 
-        #region 2x2 tiles on top of the island
-        //keep the 2x2 tiles on top for building //NOTE: using FillBow doesn't work :'(
-        //islandTilemap.SetTile(Vector3Int.zero, UIManager.GetGroundRule(1));
-        //if (!islandTiles.ContainsKey(Vector3Int.zero)) islandTiles.Add(Vector3Int.zero, 1);
-        //islandTilemap.SetTile(Vector3Int.left, UIManager.GetGroundRule(1));
-        //if (!islandTiles.ContainsKey(Vector3Int.left)) islandTiles.Add(Vector3Int.left, 1);
-        //islandTilemap.SetTile(Vector3Int.down, UIManager.GetGroundRule(1));
-        //if (!islandTiles.ContainsKey(Vector3Int.down)) islandTiles.Add(Vector3Int.down, 1);
-        //islandTilemap.SetTile(Vector3Int.down + Vector3Int.left, UIManager.GetGroundRule(1));
-        //if (!islandTiles.ContainsKey(Vector3Int.down + Vector3Int.left)) islandTiles.Add(Vector3Int.down + Vector3Int.left, 1);
-        //GridBuildingSystem.current.TakeArea(new BoundsInt(Vector3Int.left + Vector3Int.down, Vector3Int.one * 2));
+     /*   #region 2x2 tiles on top of the island  TO CHECK, TILE WORKS ON THE CORNER
+       // keep the 2x2 tiles on top for building //NOTE: using FillBow doesn't work :'(
+        islandTilemap.SetTile(Vector3Int.zero, UIManager.GetGroundRule(1));
+        if (!islandTiles.ContainsKey(Vector3Int.zero)) islandTiles.Add(Vector3Int.zero, 1);
+        islandTilemap.SetTile(Vector3Int.left, UIManager.GetGroundRule(1));
+        if (!islandTiles.ContainsKey(Vector3Int.left)) islandTiles.Add(Vector3Int.left, 1);
+        islandTilemap.SetTile(Vector3Int.down, UIManager.GetGroundRule(1));
+        if (!islandTiles.ContainsKey(Vector3Int.down)) islandTiles.Add(Vector3Int.down, 1);
+        islandTilemap.SetTile(Vector3Int.down + Vector3Int.left, UIManager.GetGroundRule(1));
+        if (!islandTiles.ContainsKey(Vector3Int.down + Vector3Int.left)) islandTiles.Add(Vector3Int.down + Vector3Int.left, 1);
+        GridBuildingSystem.current.TakeArea(TileType.White , new BoundsInt(Vector3Int.left + Vector3Int.down, Vector3Int.one * 2));
         #endregion
-
+     */
 
         UIManager.current.inventoryUI.changeBoundsEvent.Raise();
     }
@@ -375,7 +378,66 @@ public class IslandBuilder : MonoBehaviour
         placeholderTilemap.gameObject.SetActive(open);
     }
 
+    string rocksRemainingFilePath = Path.Combine(Application.persistentDataPath, "rocksRemainingJson.txt");
+
     [SerializeField] private List<Sprite> listImgRocks = new();
+
+    /// <summary>
+    /// Add rock to counter <i>rocksRemaining</i>.
+    /// </summary>
+    private void AddRock()
+    {
+        int rocksRemaining = GetRocksRemaining();
+        rocksRemaining++;
+        SetRocksRemaining(rocksRemaining);
+        UpdateRocks();
+    }
+
+    /// <summary>
+    /// Remove rock to counter <i>rocksRemaining</i>.
+    /// </summary>
+    private void RemoveRockCounter()
+    {
+        int rocksRemaining = GetRocksRemaining();
+        rocksRemaining--;
+        if (rocksRemaining <= 0) GridBuildingSystem.current.tempTilemap.color = new Color(1, 1, 1, 0.3f);
+        SetRocksRemaining(rocksRemaining);
+        UpdateRocks();
+    }
+
+    internal void UpdateRocks()
+    {
+        int nbrRocks = GetRocksRemaining();
+        UIManager.current.inventoryUI.rocksRemainingText.text = nbrRocks + "";
+        if (nbrRocks >= listImgRocks.Count) imgRocks.sprite = listImgRocks[^1];
+        else imgRocks.sprite = listImgRocks[nbrRocks];
+    }
+
+    private int GetRocksRemaining()
+    {
+        // Vérifiez si le fichier existe, sinon créez-le
+        if (File.Exists(rocksRemainingFilePath))
+        {
+            // Lisez les données du fichier
+            string jsonData = File.ReadAllText(rocksRemainingFilePath);
+            return JsonConvert.DeserializeObject<int>(jsonData);
+        }
+        else
+        {
+            // Initialisez le fichier avec une valeur par défaut si le fichier n'existe pas
+            File.WriteAllText(rocksRemainingFilePath, JsonConvert.SerializeObject(0));
+            return 0;
+        }
+    }
+
+    private void SetRocksRemaining(int rocksRemaining)
+    {
+        // Écrivez les données dans le fichier
+        File.WriteAllText(rocksRemainingFilePath, JsonConvert.SerializeObject(rocksRemaining));
+    }
+
+
+  /*  [SerializeField] private List<Sprite> listImgRocks = new(); OLD
 
     /// <summary>
     /// Add rock to counter <i>rocksRemaining</i>.
@@ -401,7 +463,7 @@ public class IslandBuilder : MonoBehaviour
         UIManager.current.inventoryUI.rocksRemainingText.text = nbrRocks + "";
         if (nbrRocks >= listImgRocks.Count) imgRocks.sprite = listImgRocks[^1];
         else imgRocks.sprite = listImgRocks[nbrRocks];
-    }
+    }*/
 
     #endregion
 

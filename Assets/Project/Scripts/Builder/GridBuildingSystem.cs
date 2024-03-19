@@ -385,7 +385,7 @@ public class GridBuildingSystem : MonoBehaviour
         if (inventoryblock.item.Type == ItemType.Rock)
         {
             Debug.LogWarning("Create Rock");
-            //InventoryUI.current.userData.islandTile.m_TilingRules[0].m_GameObject //tile gameObject
+         //   InventoryUI.current.userData.islandTile.m_TilingRules[0].m_GameObject; //tile gameObject
             return Instantiate(UIManager.GetGroundRule(1).m_DefaultGameObject, //TO DO : temporary number
                                         gridLayout.CellToWorld(IslandBuilder.current.islandTilemap.WorldToCell(UIManager.GetMousePos())),
                                         Quaternion.identity,

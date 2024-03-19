@@ -238,7 +238,7 @@ public class TopBarPanel : MonoBehaviour
         if (PlayerPrefs.GetInt("SoundPref") == 2) soundTog.isOn = false;
 
         //avatarName.text = Database.Instance?.userData.namePlayer;
-        if (avatarImage != null) avatarImage.sprite = Database.Instance.profilPictures.GetPicture(Database.Instance.userData.profilPicture);
+      //  if (avatarImage != null) avatarImage.sprite = Database.Instance.profilPictures.GetPicture(Database.Instance.userData.profilPicture);
         await CloseAllPanelsAsync(false);
         if (dotNotification != null)
         {
