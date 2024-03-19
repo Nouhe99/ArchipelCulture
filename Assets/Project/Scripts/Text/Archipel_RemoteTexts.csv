@@ -1,0 +1,133 @@
+ID;Key;Comment;French (FR);English (EN)
+1;LOADING;Default text in loading screen;Chargement...;Loading...
+2;VERSION_PREFIX;Prefix shown before the version number;V.;V.
+3;MODES_TITLE;Title in the game mode selection;Modes de jeu;Game modes
+4;PLAY_PUBLIC;Text on button to play with public account;Jouer en solo;Play solo
+5;PLAY_CLASS;Text on button to play wth class account;Rejoindre ma classe;Join my class
+6;PATCH_NOTES;Text for the link to patch notes;Notes de mise à jour;Update notes
+7;POLICY;Text on privacy policy button;Politique de confidentialité;Privacy Policy
+8;CLASS_TITLE;Title in the panel to enter class code;Mon code classe :;My class code:
+9;CODE_INPUT_PLACEHOLDER;Text for the class code input's placeholder;Code;Code
+10;CONNECT_BUTTON;Text for the class code submit button;Me connecter;Log in
+11;LOGIN_TITLE;Title in the panel to enter public credentials;Connexion;Connection
+12;MAIL_INPUT_PLACEHOLDER;Placeholder for the mail fields;Email;E-mail
+13;PASSWORD_INPUT_PLACEHOLDER;Placeholder for the password fields;Mot de passe;Password
+14;GOTO_SIGNUP_BUTTON;Text on signup button;Je n'ai pas encore de compte;I have no account yet
+15;GOTO_FORGOTPWD_BUTTON;Text on forgotpassword button;J'ai oublié mon mot de passe;I forgot my password
+16;SIGNUP_TITLE;Title in the signup panel;Inscription;Registration
+17;SIGNUP_BUTTON;Text to validate signup form;M'inscrire;Register
+18;GOTO_LOGIN_BUTTON;Text on button redirecting from signup to login;J'ai déjà un compte;I already have an account
+19;FORGOTPWD_TITLE;Title in forgot password's panel;Changer mon mot de passe;change my password
+20;FORGOTPWD_BUTTON;Text on forgotpassword button;Réinitialiser;Reset
+21;PROFILE_SELECT_TITLE;Title in profile selection panel;Qui est-ce ?;Who is this ?
+22;ADD_PROFILE;Text in add profile button;Ajouter un profil;Add a profile
+23;LOGOUT_BUTTON;Text in logout button;Me déconnecter;Disconnect
+24;CREATE_PROFILE_TITLE;Title in profile creation panel;Nouveau profil;New profile
+25;CHOOSE_USERNAME;Label for username input field;Choisis un nom pour ton profil;Choose a name for your profile
+26;USERNAME_PLACEHOLDER;Placeholder for username field;Aventurier;Adventurer
+27;CREATE_PROFILE_BUTTON;Text in create profile button;Ajouter ce profil;Add this profile
+28;CREATE_PROFILE_TIPS;Text for the tips located in the profile creation panel;Astuce: ton image de profil est modifiable en jeu;Tip: Your profile image can be modified in play
+29;CHOOSE_PROFILE_BUTTON;Text in button to login with the profle selected;Choisir ce profil;Choose this profile
+30;AUDIO_TITLE;Title for the audio parameters;Audio;Audio
+31;SFX_TITLE;Title for the SFX volume parameters;Effets sonore;Sound effects
+32;MUSIC_TITLE;Title for the music volume parameters;Musique;Music
+33;ON;On Text;ON;ON
+34;OFF;Off Text;OFF;OFF
+35;CODE_TITLE;Title in the code parameters;Code;
+36;CODE_SUBMIT;Text on submit code button;Valider mon code;Validate my code
+37;LOGOUT_PROFILE;Text on change profile button ingame;Je veux changer de profil;I want to change profile
+38;QUIT_GAME;Text on quit game button;Je veux quitter l'application;I want to leave the application
+39;HELP_BUILDER_TITLE;Title for the helper related to builder;1.Construire;
+40;HELP_SHOP_TITLE;Title for the helper related to shop;2.Acheter;
+41;HELP_NAVIGATE_TITLE;Title for the helper related to navigation;3.Naviguer;
+42;HELP_SCENARIO_TITLE;Title for the helper related to scenarios;4.Résoudre des énigmes;
+43;HELP_BUILDER1;Text on the helper page builder 1;En cliquant sur la <b>tortue</b>, tu accèdes au mode construction.\r\n<b>Mon île</b> te permets de former la base de ton île à l'aide de tes rochers.\r\nTu peux choisir le style et tu n'as qu'à cliquer sur le + pour poser un terrain.;
+44;HELP_BUILDER2;Text on the helper page builder 2;Clique sur <b>Retirer</b> pour activer la suppression des terrains et récupérer tes rochers.;
+45;HELP_BUILDER3;Text on the helper page builder 3;Fais glisser tes <b>décorations</b> de ton inventaire vers ton île pour les positionner.;
+46;HELP_BUILDER4;Text on the helper page builder 4;Fais glisser tes <b>constructions</b> de ton inventaire vers la zone de construction pour les positionner et choisir à quel niveau tu souhaites les placer.;
+47;HELP_SHOP;Text on the helper page shop;Clique sur <b>BricoBrac</b> pour ouvrir le magasin.\r\nTu y trouveras des objets et des bâtiments pour ton île !;
+48;HELP_NAVIGATE;Text on the helper page navigate;Pour te déplacer utilise le joystick en bas à gauche ou clique sur ta destination.;
+49;HELP_SCENARIO;Text on the helper page scenario;Clique sur une île, puis clique sur le premier point pour commencer.\r\nTu as 5 énigmes à résoudre.\r\nBonne chance !;
+50;PROFILE_TITLE;Title for the profile panel;Profil;Profile
+51;NEW_USERNAME_PLACEHOLDER;Placeholder for the new username field;Nouveau pseudo...;New nickname ...
+52;FRIENDS_BUTTON;Text on my friends button;Mes amis;My friends
+53;CHANGE_PIN_BUTTON;Text on change my pin button;Modifier mon code secret;Modify my secret code
+54;CLASS_ADVANTAGE;Label shown when not connected to a class account;Un compte classe permet de visiter l'île de tes amis, recevoir des cadeaux et plein d'autres avantages !;A class account allows you to visit the island of your friends, receive gifts and many other advantages!
+55;FRIENDS_TITLE;Title for friends panel;Mes amis;My friends
+56;TITLE_NOTCONNECTED;Text when trying to get titles without internet;Tu as besoin d'une connexion internet\npour récupérer les titres.;
+57;NEW_PIN_CONFIRM_BUTTON;Text to confirm the new pin;Valider le nouveau code secret;Validate the new secret code
+58;BACKTO_PROFILE;Text going back to profile;Retourner au profil;Return to profile
+59;RESOURCES_TITLE;Title for resources panel;Ressources;Resources
+60;PROGRESS_TITLE;Title for progress panel;Progression;Progress
+61;BUILDER_ROCKS;Text for rocks remaining in builder;Rocher(s);ROCK (s)
+62;BUILDER_ISLAND;Text for island toggle in builder;Mon île;My island
+63;BUILDER_DECO;Text for decoration toggle in builder;Mes décorations;My decorations
+64;BUILDER_HOME;Text for home toggle in builder;Ma construction;My construction
+65;GIFT_TITLE;Title for gift panel;Cadeaux;Gifts
+66;GIFT_RECEIVED;Text on received gift tab;Reçus;Receipts
+67;GIFT_SENT;Text on sent gift tab;Envoyés;Envoys
+68;SEND_GIFT_BUTTON;Text on the button to send a gift;Envoyer un cadeau à un ami;Send a gift to a friend
+69;CHOOSE_GIFT_DEST;Text shown when asked to choose a recipient;Choisir un destinataire;Choose a recipient
+70;SEND_GIFT_CONFIRM_BUTTON;Text on the button to confirm sending gift;Envoyer !;Send !
+71;SHOP_TITLE;Title for the shop panel;Magasin BricoBrac;Bricobrac store
+72;GOLD_LABEL;Label above gold;Mon trésor :;My Treasure :
+73;BUY_BUTTON;Text on buy button;Acheter;Buy
+74;WORLD_ISLE_TITLE;Title for the player isle;Mon île;My island
+75;WORLD_ISLE_ACTION;Text describing what the button "isle" does;Rentrer sur mon île;Get back to my island
+76;WORLD_KRAKEN_TITLE;Title for the kraken;Le Kraken;Kraken
+77;WORLD_KRAKEN_ACTION;Text describing what the button kraken does;Affronter le Kraken >;Face the kraken>
+78;WORLD_SCENARIO_BUTTON;Text to start the scenario;Commencer;Begin
+79;WORLD_SCENARIO_LOCKED;Text shown when scenario is locked;Vous n'avez pas accès à cette île pour le moment;You do not have access to this island at the moment
+80;WORLD_QUEST_TOGGLE;Text on the toggle to show/hide quests;Voyages rapides;Quick trips
+81;REWARD_QUIT_BUTTON;Text on last button in rewards;Continuer;Continue
+82;REWARD_NEXT_BUTTON;Text to go to next reward;Récompense suivante;Next reward
+83;REWARD_OPEN_CRAFT_BUTTON;Text to open gift chest;Ouvrir la caisse;Open the box
+84;CHEST;Text label for chest;Coffre;Chest
+85;REWARD_OPEN_CHEST_BUTTON;Text to open chest;Ouvrir le coffre;Trunk
+86;VALIDATE;Validate label;Valider;To validate
+87;ERASE;Erase label;Effacer;To erase
+88;NEXT;Next label;Suivant;Following
+89;KRAKEN_REWARD_BUTTON;Text on reward button for the kraken;Récupérer le trésor !;Recover the treasure!
+90;NAV_FAST_TRIP_BUTTON;Text shown on the fast travel button;Voyage rapide;Quick trip
+91;NAV_FAST_TRIP_TITLE;Title for a fast travel quest;Quête n°;Quest number
+92;NAV_FAST_TRIP_DESC;Description for a fast travel quest;Aller à l'aventure;Go on an adventure
+93;POPUP_BACK_TO_ISLE;Text for the popup asking if we go back to our isle;Retourner sur mon île ?;Go back to my island?
+94;GIFT_UNOPENED;Description for unopened gift;<b>{0}</b> t'a envoyé un cadeau !<br><size=75%>Reçu le {1}</size>;
+95;GIFT_OPENED;Description for opened gift;Cadeau de <b>{0}</b><br><size=75%>Ouvert le {1}.</size>;
+96;GIFT;Text label for gift;Cadeau;Gift
+97;GIFT_SENT_INFO;Description for sent gift;{0} envoyé à {1} le {2}.;{0} sent to {1} the {2}.
+98;GIFT_SEND_CONFIRM;Text asking confirmation before sending gift;Envoyer {0} à {1} ?;Send {0} to {1}?
+99;KRAKEN_EXIT;Text asking confirmation before quitting kraken;Veux-tu prendre \nla fuite ?;
+100;COIN;Label for a coin;Pièce;Piece
+101;COINS;Label for multiple coins;Pièces;Pieces
+102;RETRY;Label for retry;Réessayer;Try again
+103;CONTINUE;Label for continue;Continuer;Continue
+104;CONNECTION_ERROR;Text showing when a connection error appear;Une erreur de connexion est apparue, connectez-vous à internet puis réessayez.;A connection error has appeared, connect to the Internet and then try again.
+105;POPUP_QUIT_GAME;Popup text before quitting game;Quitter le jeu ?;Leave the game ?
+106;POPUP_DELETE_PROFILE;Popup text before deleting a profile;Es-tu sûr de vouloir <b>supprimer</b> le profil de {0} ?;
+107;AUTHENTICATE_ERROR;Text shown when error authenticating;Vos informations d'authentification sont incorrectes;Your authentication information is incorrect
+108;COST;Label for cost;Coût :;Cost :
+109;REWARD_RETRIEVED;Text shown when already got the reward asked;Tu as déjà récupéré cette récompense !;You have already recovered this award!
+110;NEED_MORE_FOR_REWARD;Text shown when can't get the reward;Termine plus d'aventures pour débloquer cette récompense.;Ends more adventures to unlock this award.
+111;OK;Label for ok;Ok;OK
+112;YES;Label for yes;Oui;Yes
+113;NO;Label for no;Non;No
+114;QUIZ_RIGHT_TITLE;Title shown when the quiz is correct;<font-weight=700>Super !</font-weight><br><font-weight=500><size=75%>C'est la bonne réponse !</size></font-weight>;
+115;QUIZ_WRONG_TITLE;Title shown when quiz is wrong;<font-weight=700>Bien essayé !</font-weight><br><font-weight=500><size=75%>Mais ce n'est pas la bonne réponse.</size></font-weight>;
+116;QUIZ_RIGHT;Text shown when quiz is correct;Correct !\n\n;Correct! \n\n
+117;QUIZ_WRONG;Text shown when quiz is wrong;Incorrect !\n\n;Incorrect! \n\n
+118;QUIZ_RESPONSE_IS;Prefix to the correct answer;La bonne réponse est :;The right answer is:
+119;QUIZ_RESPONSES_ARE;Prefix to the correct answers;Les bonnes réponses sont :;The right answers are:
+120;QUIZ_VALIDATE;Text shown for validating answers;Valider la réponse;Validate the answer
+121;TITLE_NEW;Text for new title;Nouveau titre !;New title!
+122;POPUP_LOGOUT;Popup text before logout;Veux-tu vraiment te déconnecter ?;Do you really want to log out?
+123;CODE_WRONG;Text for wrong code input;Code invalide;Invalid code
+124;UNLOCK_SCENARIO;Text when unlocking a new scenario;Tu as débloqué le scénario {0} !;You unlocked the scenario {0}!
+125;WELCOME;Text shown at first login;Bienvenue {0} !\r\n\r\n\r\nPour commencer, tu peux regarder le tutoriel en appuyant sur <size=200%><sprite=0></size> puis sur <size=200%><sprite=1></size>\r\n\r\n\r\n<size=80%><i>Continuer...</i></size>;Welcome {0}! \r\n\r\n\r\nto start, you can look at the tutorial by pressing <size=200%> <Sprite=0></size> then on <size=200%> <Sprite=1></size> \r\n\r\n\r\n <size=80%> <i>Continue ...</i></size>
+126;REWARD_AVAILABLE_NOTIF;Text shown when a reward is available;Une nouvelle récompense est disponible !\nTu peux la récupérer depuis ton profil;A new reward is available! \nyou can recover it from your profile
+127;SCREENSHOT_SAVE;Text shown when a screenshot is saved;Image enregistrée dans;Image saved in
+128;RARITY1;Label for rarity 1;Commun;Common
+129;RARITY2;Label for rarity 2;Rare;Rare
+130;RARITY3;Label for rarity 3;Épique;Epic
+131;RARITY4;Label for rarity 4;Unique;Unique
+132;VIDEO_BUTTON;Text shown on the video button;Voir une vidéo;Watch a video

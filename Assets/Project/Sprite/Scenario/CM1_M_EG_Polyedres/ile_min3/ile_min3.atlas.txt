@@ -1,0 +1,9 @@
+ile_min3.png
+size:512,512
+filter:Linear,Linear
+pma:true
+deco marines/CM1_M_EG_Polyedres_ILE_min
+bounds:2,2,281,374
+offsets:62,5,401,400
+deco marines/genric_wave
+bounds:285,174,181,202

@@ -1,0 +1,10 @@
+ile_min2.png
+size:512,512
+filter:Linear,Linear
+pma:true
+deco marines/CM1_M_EG_DroitesPerpendiculaires_ILE_min
+bounds:2,185,282,306
+offsets:60,5,400,400
+deco marines/genric_wave
+bounds:2,2,181,202
+rotate:90

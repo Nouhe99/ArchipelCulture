@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a1c4e54727a65a3429e1b59aaf42eeb2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - changeBoundsEvent: {instanceID: 0}
+  - menuSelection: {instanceID: 0}
+  - contentCustom: {instanceID: 0}
+  - contentHome: {instanceID: 0}
+  - itemEntry: {fileID: 2724918466940573271, guid: a9d0e8625ccb11a44b0f60e3a0e5d02b, type: 3}
+  - rocksRemainingText: {instanceID: 0}
+  - outOfWindow: {instanceID: 0}
+  - togglesRocks: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

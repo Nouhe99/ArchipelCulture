@@ -1,0 +1,8 @@
+deco marine 2.png
+size:1024,512
+filter:Linear,Linear
+pma:true
+deco marines/genric_wave
+bounds:427,258,181,202
+deco marines/rock5
+bounds:2,2,423,458

@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 6ce9329c49bb71744ae13a54ad167bde
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - clickNormal: {fileID: 8300000, guid: 6412f5bb47e8ef649896db2859912cdc, type: 3}
+  - clickReturn: {fileID: 8300000, guid: 8afbff6237fbe1b48bd06e254aa0409c, type: 3}
+  - buyPiece: {fileID: 8300000, guid: 5eb8f7147365341309306e1d4463381b, type: 3}
+  - bounce: {instanceID: 0}
+  - placeItem: {instanceID: 0}
+  - photoSaved: {instanceID: 0}
+  - goodAnswer: {instanceID: 0}
+  - badAnswer: {instanceID: 0}
+  - celebration: {instanceID: 0}
+  - fail: {instanceID: 0}
+  - eventKraken: {instanceID: 0}
+  - beach: {instanceID: 0}
+  - musicLogin: {instanceID: 0}
+  - musicSelectLevel: {instanceID: 0}
+  - musicAdventure: {instanceID: 0}
+  - openPage: {fileID: 8300000, guid: dc80695cf2d6145419d8947398656c42, type: 3}
+  - closePage: {instanceID: 0}
+  - openBook: {instanceID: 0}
+  - closeBook: {instanceID: 0}
+  - bipValid: {instanceID: 0}
+  - bipUnvalid: {instanceID: 0}
+  - bipButton: {fileID: 8300000, guid: 12488b755236a3b40b05edf6f3fc670e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

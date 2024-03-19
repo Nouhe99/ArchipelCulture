@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 820f73bac535ab34b8dc48af4586073e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - picture: {instanceID: 0}
+  - questionMark: {fileID: 21300000, guid: f1b380a1d0cf82b419de1c04adac1781, type: 3}
+  - hide: {instanceID: 0}
+  - selected: {instanceID: 0}
+  - observer: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

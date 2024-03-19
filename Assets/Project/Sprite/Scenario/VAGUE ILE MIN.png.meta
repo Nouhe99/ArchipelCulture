@@ -1,0 +1,1489 @@
+fileFormatVersion: 2
+guid: 2c78488c17dc79d4586d69c7987d2353
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1910
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bdbf0a5371cee499321f832689d86d
+      internalID: 2095930587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_1
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1910
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8f50b9a5116a547b2c763974f4b201
+      internalID: -1920258533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_2
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1910
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8e43074b1bcf243a06ed5ddc52c22c
+      internalID: 1478689528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_3
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1910
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f7189db4d2fd94084e7405b80bcb36
+      internalID: 405092473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_4
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1910
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e148bef2ba8d4b45b191f73290769ee
+      internalID: -947109550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1772
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c398162c3a48ee04e9d86d52c697205e
+      internalID: 487428405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_6
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1772
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c13314df5264844bfd643bb6134898
+      internalID: -2055003283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_7
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1772
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6516b00cf290e468f56fbce699cf08
+      internalID: 1974838333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_8
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1772
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e754a5590381b45a987d7d514d1dd5
+      internalID: 1272488340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_9
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1772
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1025de521964548aa17194208f9951
+      internalID: 702027578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1634
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c3bc536bcfef44db26a87f2a8264aa
+      internalID: -267846970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_11
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1634
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf451b914389d74d88f3bedfd42f58a
+      internalID: 1763053160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_12
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1634
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9efc4bafa1ed0488a7bc2b251d7854
+      internalID: 368557939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_13
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1634
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3f19297adfa8f4ea9a890ce8236e86
+      internalID: 569219727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_14
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1634
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2e390f55be8ad45b18af9a74053eea
+      internalID: 389406314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1496
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922e42f9dda8f6944b643265453ee085
+      internalID: 1029048376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_16
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1496
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511f4c347b86faa4487241fd2ed01fad
+      internalID: -2127164032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_17
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1496
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11546a39ec188a41804370c493e6a45
+      internalID: 1052323924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_18
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1496
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a7f4c6fd997894ab9951ad238860a7
+      internalID: 2066415950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_19
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1496
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72f2f80975177e479c180214fb255f6
+      internalID: 1497664922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1358
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f080b98b5e7d54384b4c3f14165c32
+      internalID: -1174361352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_21
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1358
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc89e54317df45044bd1bbfa3a746077
+      internalID: -1635823809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_22
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1358
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2474787613301440b6e0ea55612c624
+      internalID: 559490018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_23
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1358
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfb573c28a049f4da36204e03be20b7
+      internalID: -1095161442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_24
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1358
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e781ef0fc6917468b1a5127f46e3b4
+      internalID: 2137797102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1220
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af12f012a74b234891cda29bb2d4838
+      internalID: 2031983652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_26
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1220
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07723cef78d2f5e499d91e150986d18b
+      internalID: 677100602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_27
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1220
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13cd9d30c62ae0448f0ccf15649a371
+      internalID: -895084611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_28
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1220
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65e4a20a6d94cf44aac95acabce77cb
+      internalID: 1643604424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_29
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1220
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1e188ee0d876b46b1cabfc11f2d22e
+      internalID: 70696634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1082
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b6069f7262a384091001e116c0bb33
+      internalID: 265732371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_31
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1082
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491ce4848dba5ea4690958a1b105c9b8
+      internalID: 1141706985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_32
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1082
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31f807dbee65ad4a994ce1eabef7938
+      internalID: -792029715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_33
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1082
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f684c2c5da2c56c46a2c6cefe111996e
+      internalID: -1659951538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_34
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1082
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c7e218142ee814c95a3f9a89246dea
+      internalID: 942602406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 944
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b2b972ffaafbc49ae20067c7803ff5
+      internalID: -114923526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_36
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 944
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b88e05e322054469e48d89e8b490f5
+      internalID: 270650482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_37
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 944
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b82710e908dd9e4593c6b73129635ad
+      internalID: 2118460775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_38
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 944
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58097200b3c98e641bb4313293ec36f1
+      internalID: 831912222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_39
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 944
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812c4fa396017c44b994695e2ae89bc2
+      internalID: -495759124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 806
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6f2ae87d7928942af50fd796db2df6
+      internalID: -960767956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_41
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 806
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef15435d92b66a42b1796f7a9ff6c51
+      internalID: 1593747834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_42
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 806
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50aabd1db3608f4f963e2f37c9f70ba
+      internalID: -1917196622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_43
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 806
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e84bcec28051f3409719b083eebfcfa
+      internalID: 1872009161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_44
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 806
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd0858d948fec94da8d6704aa4017b0
+      internalID: 374433940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 668
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa233b6af1b5a54f92ecaaba76b0504
+      internalID: -1582529487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_46
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 668
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd478c2a9a54aa4cbe2c0d019200d01
+      internalID: -935898197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_47
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 668
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fae0fa4924fb84bb9b1c1ecef6f1bd
+      internalID: 1466312032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_48
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 668
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ae86d319756504eafd59a51cc3d072
+      internalID: -2081113569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_49
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 668
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c886bf9f7d1327140a36d21b99e77963
+      internalID: -516358214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200fcb5f975fa4a46ad937c98b6a1f61
+      internalID: -505838699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_51
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 530
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325387b9714fabf459bbb51f610e498a
+      internalID: -225634729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_52
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 530
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66168ead5b065fc4190a10b5173a177a
+      internalID: 1300926727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_53
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 530
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb9a534c1720be48a69e52ad4d27dab
+      internalID: -1266777079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_54
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 530
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa889c410ec227458b59b3e28cb0bfa
+      internalID: -274396385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23787756f55da364d9a010b1f699d2e0
+      internalID: -547534797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_56
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 392
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6524532721b064ca185372ac10202f
+      internalID: -1801417119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_57
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 392
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66a978a38b2bac4683f132fc86cefeb
+      internalID: -2039379486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_58
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 392
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92290c9b79c472e4596562483184ae33
+      internalID: 832696272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_59
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 392
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e8143e8500fab4eb2b0171e4de17a8
+      internalID: 1606960863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VAGUE ILE MIN_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 254
+        width: 409
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e791c705a595049a11ac5b605d9745
+      internalID: -2097297599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      VAGUE ILE MIN_52: 1300926727
+      VAGUE ILE MIN_4: -947109550
+      VAGUE ILE MIN_30: 265732371
+      VAGUE ILE MIN_2: 1478689528
+      VAGUE ILE MIN_26: 677100602
+      VAGUE ILE MIN_0: 2095930587
+      VAGUE ILE MIN_6: -2055003283
+      VAGUE ILE MIN_45: -1582529487
+      VAGUE ILE MIN_1: -1920258533
+      VAGUE ILE MIN_51: -225634729
+      VAGUE ILE MIN_50: -505838699
+      VAGUE ILE MIN_20: -1174361352
+      VAGUE ILE MIN_21: -1635823809
+      VAGUE ILE MIN_23: -1095161442
+      VAGUE ILE MIN_38: 831912222
+      VAGUE ILE MIN_17: 1052323924
+      VAGUE ILE MIN_48: -2081113569
+      VAGUE ILE MIN_42: -1917196622
+      VAGUE ILE MIN_16: -2127164032
+      VAGUE ILE MIN_54: -274396385
+      VAGUE ILE MIN_12: 368557939
+      VAGUE ILE MIN_27: -895084611
+      VAGUE ILE MIN_19: 1497664922
+      VAGUE ILE MIN_28: 1643604424
+      VAGUE ILE MIN_39: -495759124
+      VAGUE ILE MIN_34: 942602406
+      VAGUE ILE MIN_13: 569219727
+      VAGUE ILE MIN_36: 270650482
+      VAGUE ILE MIN_29: 70696634
+      VAGUE ILE MIN_41: 1593747834
+      VAGUE ILE MIN_7: 1974838333
+      VAGUE ILE MIN_8: 1272488340
+      VAGUE ILE MIN_49: -516358214
+      VAGUE ILE MIN_37: 2118460775
+      VAGUE ILE MIN_53: -1266777079
+      VAGUE ILE MIN_44: 374433940
+      VAGUE ILE MIN_55: -547534797
+      VAGUE ILE MIN_15: 1029048376
+      VAGUE ILE MIN_40: -960767956
+      VAGUE ILE MIN_10: -267846970
+      VAGUE ILE MIN_35: -114923526
+      VAGUE ILE MIN_33: -1659951538
+      VAGUE ILE MIN_56: -1801417119
+      VAGUE ILE MIN_24: 2137797102
+      VAGUE ILE MIN_3: 405092473
+      VAGUE ILE MIN_5: 487428405
+      VAGUE ILE MIN_43: 1872009161
+      VAGUE ILE MIN_60: -2097297599
+      VAGUE ILE MIN_11: 1763053160
+      VAGUE ILE MIN_18: 2066415950
+      VAGUE ILE MIN_58: 832696272
+      VAGUE ILE MIN_9: 702027578
+      VAGUE ILE MIN_25: 2031983652
+      VAGUE ILE MIN_46: -935898197
+      VAGUE ILE MIN_31: 1141706985
+      VAGUE ILE MIN_14: 389406314
+      VAGUE ILE MIN_57: -2039379486
+      VAGUE ILE MIN_32: -792029715
+      VAGUE ILE MIN_22: 559490018
+      VAGUE ILE MIN_47: 1466312032
+      VAGUE ILE MIN_59: 1606960863
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

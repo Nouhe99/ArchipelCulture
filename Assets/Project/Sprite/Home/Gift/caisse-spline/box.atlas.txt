@@ -1,0 +1,10 @@
+box.png
+size:460,360
+filter:Linear,Linear
+pma:true
+OBJ
+bounds:2,2,354,358
+rotate:90
+box_foam
+bounds:362,60,296,96
+rotate:90

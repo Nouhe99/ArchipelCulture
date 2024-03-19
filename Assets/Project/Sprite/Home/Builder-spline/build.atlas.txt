@@ -1,0 +1,11 @@
+build.png
+size:1508,616
+filter:Linear,Linear
+pma:true
+bg_shop
+bounds:2,2,738,609
+foam_shop
+bounds:742,14,597,399
+rotate:90
+perso_shop
+bounds:1143,131,362,480

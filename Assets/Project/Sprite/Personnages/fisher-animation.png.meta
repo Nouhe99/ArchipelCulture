@@ -1,0 +1,1359 @@
+fileFormatVersion: 2
+guid: 5c78750a4e8fadd4db7d399a5a6e77bc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fisher-animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2495
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292fcb2e3a1021a49b2a44a947205a70
+      internalID: -1903341848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_1
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 2495
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b766790b901ca6346acce5ba10590bde
+      internalID: 1001413561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_2
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 2495
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f570e41cd44a8fb4c8fc84e89ba5937d
+      internalID: -1971382213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_3
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 2495
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1569b9a39dcec984bbd6f93a9b445754
+      internalID: 572605114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_4
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2495
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2cfdf234b01aa8479d9ec88e08c3962
+      internalID: -24866819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_5
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 2495
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4717dcd6ef52f4ba592fd036604377
+      internalID: -1107133097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2184
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d808945908d26640836eeb7865282c6
+      internalID: 456839408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_7
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 2184
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791b6849916a4f64aaac4a7226d0160a
+      internalID: -1042985790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_8
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 2184
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d6c019f6fe1804dae95d8b2daa5f7f
+      internalID: 94541788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_9
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 2184
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6146643d9a3de448d3c9b427534568
+      internalID: 1299933309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_10
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 2184
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f39d94c9f84ee48b0043abe6a255da
+      internalID: -1818231186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_11
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 2184
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688a448bf49c6e34d8b8a5b69f0c7093
+      internalID: 1343358841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1873
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e1569f79b8dd745a43a3e399342a23
+      internalID: -1543265331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_13
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1873
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dee6686ac2321f4eb7d6c2b5435a0c6
+      internalID: 1777656190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_14
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1873
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09d2bc8556ef6547a2336e387dc3d09
+      internalID: 457804361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_15
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1873
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e9e87ff99de5d47876279bd32cc42a
+      internalID: 1061359320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_16
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1873
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087c6eb6b05e34f40aed443b1de45a73
+      internalID: 758929202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_17
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 1873
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7fed1a6358fc84a9038959dfb49398
+      internalID: -1263769420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1562
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4873f7ff32d41d49ac9d0f8fdff61da
+      internalID: 1180110601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_19
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1562
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243c7b23b9e5a724392f65892d32855f
+      internalID: -779236460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_20
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1562
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d5fea3759b71544a7ccf6807254522
+      internalID: -40649951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_21
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1562
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d23668b09f14e74197d523bf84d7ea8
+      internalID: -483470355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_22
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1562
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5460165721b3fdc4e8d70b104ec7cfa9
+      internalID: 1965865153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_23
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 1562
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b325fe94d4558e4093b7e6daef937e2
+      internalID: -1799840927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1251
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4b84742ba4d7b4fa8b39adafde3e87
+      internalID: 1127191201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_25
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1251
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3929d2dbe8aa3e7458fb28cafd0ef3eb
+      internalID: 123700863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_26
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1251
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c464636df72a6a45ab3dbeeee5aac8c
+      internalID: 2130201058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_27
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1251
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7867113c3e732a440a681b23bb61710a
+      internalID: 1427210531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_28
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1251
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856f5609aab9c5449b41f3547e035087
+      internalID: -1650552944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_29
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 1251
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607f493c5b48a99478d319cd5598c964
+      internalID: -284136435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 940
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4146da338e2c3469eb827c59679de7
+      internalID: 747681651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_31
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 940
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34f52cf4064fd34da89228a218e758e
+      internalID: -1101309892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_32
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 940
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd1da79550fe3546b5861363de42c3c
+      internalID: -219128000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_33
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 940
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa551d1f5ed397b41bff251d3bd31900
+      internalID: 1966246417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_34
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 940
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5e957565cfc4f49b0e5f798a3b06b5
+      internalID: 1695905927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_35
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 940
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b982dbc21ccad43a4f3b10753fb33c
+      internalID: -826021602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 629
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c546417924935d41b9bcbb2d979ebd4
+      internalID: 1273802338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_37
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 629
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f791fbe1f19222e4ebc79a6ce728a544
+      internalID: -1818975964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_38
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 629
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad72badb4bf8ec643a1cfad1bbab4869
+      internalID: -1776110254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_39
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 629
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fad05adafe351647acf333afae8051f
+      internalID: 963379275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_40
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 629
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bc77589516c8944b774c052ab24f79
+      internalID: -496604329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_41
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 629
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67da804ecdf80943a697a37bdcf4b78
+      internalID: 330102472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 318
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2c64449c0b85347a0fafcdad385026
+      internalID: 973370338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_43
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 318
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b19a915754ec58499b747992c2702db
+      internalID: 539206205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_44
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 318
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dacae7f950cec4b97cc160e0ab9c12
+      internalID: -371143723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_45
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 318
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295c0de23d541624b8bb8678c0909846
+      internalID: -494764902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_46
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 318
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f9b86ad7250b441be30b701d90e8c9
+      internalID: 1018901554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_47
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 318
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da0d9a2ec0c28a40812c3c358f3e9d1
+      internalID: -1254726763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d293748d9fdf1134896546ef1b807520
+      internalID: 1022158457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_49
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 7
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5b749ace4a3d74d8273e3c12e5be36
+      internalID: -1986662804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_50
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 7
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971c365ed05ccc84089b39c68012e165
+      internalID: -291344032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_51
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 7
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51dc1ec9c2fe5ff47b85720eaf9c1fb1
+      internalID: -1878698708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_52
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 7
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f6fa2548d6ab949bd28ecf2bcffa39
+      internalID: 25770602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fisher-animation_53
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 7
+        width: 295
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e617737203c604cbfdf8f212e5a962
+      internalID: -666534411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      fisher-animation_30: 747681651
+      fisher-animation_16: 758929202
+      fisher-animation_38: -1776110254
+      fisher-animation_26: 2130201058
+      fisher-animation_11: 1343358841
+      fisher-animation_25: 123700863
+      fisher-animation_3: 572605114
+      fisher-animation_19: -779236460
+      fisher-animation_33: 1966246417
+      fisher-animation_29: -284136435
+      fisher-animation_20: -40649951
+      fisher-animation_9: 1299933309
+      fisher-animation_7: -1042985790
+      fisher-animation_52: 25770602
+      fisher-animation_17: -1263769420
+      fisher-animation_44: -371143723
+      fisher-animation_8: 94541788
+      fisher-animation_22: 1965865153
+      fisher-animation_23: -1799840927
+      fisher-animation_14: 457804361
+      fisher-animation_39: 963379275
+      fisher-animation_48: 1022158457
+      fisher-animation_27: 1427210531
+      fisher-animation_2: -1971382213
+      fisher-animation_53: -666534411
+      fisher-animation_36: 1273802338
+      fisher-animation_28: -1650552944
+      fisher-animation_46: 1018901554
+      fisher-animation_13: 1777656190
+      fisher-animation_0: -1903341848
+      fisher-animation_43: 539206205
+      fisher-animation_47: -1254726763
+      fisher-animation_24: 1127191201
+      fisher-animation_5: -1107133097
+      fisher-animation_31: -1101309892
+      fisher-animation_6: 456839408
+      fisher-animation_42: 973370338
+      fisher-animation_50: -291344032
+      fisher-animation_51: -1878698708
+      fisher-animation_37: -1818975964
+      fisher-animation_21: -483470355
+      fisher-animation_1: 1001413561
+      fisher-animation_49: -1986662804
+      fisher-animation_12: -1543265331
+      fisher-animation_32: -219128000
+      fisher-animation_15: 1061359320
+      fisher-animation_18: 1180110601
+      fisher-animation_40: -496604329
+      fisher-animation_45: -494764902
+      fisher-animation_41: 330102472
+      fisher-animation_35: -826021602
+      fisher-animation_10: -1818231186
+      fisher-animation_34: 1695905927
+      fisher-animation_4: -24866819
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

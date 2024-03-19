@@ -1,0 +1,15 @@
+shop.png
+size:1628,616
+filter:Linear,Linear
+pma:true
+bg_shop
+bounds:2,2,738,609
+foam_shop
+bounds:742,14,597,399
+rotate:90
+obj_shop
+bounds:1143,9,238,235
+rotate:90
+perso_shop
+bounds:1143,249,362,480
+rotate:90

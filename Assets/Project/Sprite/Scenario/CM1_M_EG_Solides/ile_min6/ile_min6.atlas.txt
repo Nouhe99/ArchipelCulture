@@ -1,0 +1,9 @@
+ile_min6.png
+size:1024,512
+filter:Linear,Linear
+pma:true
+deco marines/CM1_M_EG_Solides_ILE_min
+bounds:2,2,343,370
+offsets:41,4,400,400
+deco marines/genric_wave
+bounds:347,170,181,202

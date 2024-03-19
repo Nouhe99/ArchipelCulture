@@ -1,0 +1,9 @@
+shop.png
+size:1024,1024
+filter:Linear,Linear
+pma:true
+deco marines/genric_wave
+bounds:2,2,181,202
+shop2
+bounds:2,206,790,795
+offsets:5,0,800,800

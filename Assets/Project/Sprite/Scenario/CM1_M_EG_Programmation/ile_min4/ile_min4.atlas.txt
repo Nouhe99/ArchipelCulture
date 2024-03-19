@@ -1,0 +1,9 @@
+ile_min4.png
+size:512,512
+filter:Linear,Linear
+pma:true
+deco marines/CM1_M_EG_Programmation_ILE_min
+bounds:2,206,279,291
+offsets:62,5,401,400
+deco marines/genric_wave
+bounds:2,2,181,202

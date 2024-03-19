@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 6e219fde52be54140ab3857e8527b71a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - audioBank: {instanceID: 0}
+  - sceneController: {instanceID: 0}
+  - mainCanvas: {instanceID: 0}
+  - topBarPanel: {instanceID: 0}
+  - settingsPanel: {instanceID: 0}
+  - profil: {instanceID: 0}
+  - shop: {instanceID: 0}
+  - giftsManager: {instanceID: 0}
+  - inventoryUI: {instanceID: 0}
+  - itemContener: {instanceID: 0}
+  - floorContener: {instanceID: 0}
+  - gameContent: {instanceID: 0}
+  - fingerIcon: {fileID: 502899281172330462, guid: 2064b624dc145034f860414e351fd536, type: 3}
+  - notificationSuccess: {instanceID: 0}
+  - giftObject: {instanceID: 0}
+  - giftNotification: {instanceID: 0}
+  - boatObject: {instanceID: 0}
+  - boatSpriteGoAway: {fileID: 21300000, guid: 21581db46430b3d439b8ec9615d64c29, type: 3}
+  - buttonSettings: {instanceID: 0}
+  - buttonExpedition: {instanceID: 0}
+  - buttonBuilder: {instanceID: 0}
+  - buttonProfil: {instanceID: 0}
+  - buttonShop: {instanceID: 0}
+  - buttonGifts: {instanceID: 0}
+  - itemsList: {instanceID: 0}
+  - confirmationDialog: {fileID: 197702543370022749, guid: ae5eab059589e784f8051ec6a449b395, type: 3}
+  - infoDialog: {instanceID: 0}
+  - finger: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

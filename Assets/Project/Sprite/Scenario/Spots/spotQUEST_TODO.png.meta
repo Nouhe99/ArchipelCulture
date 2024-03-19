@@ -1,0 +1,1824 @@
+fileFormatVersion: 2
+guid: dbbe399f30ccb05408d50cba508535b7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spotQUEST_TODO_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 875
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734c922deeb939a48b847f7c9f4803e5
+      internalID: -1322978308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 875
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665d89211ecda684abcc968ade8cf452
+      internalID: 1206675976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_2
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 875
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fc9ddb928c0b843ac245c6a8178bd4
+      internalID: 162267131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_3
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 875
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3573be4847476f745a7c333507ef2356
+      internalID: 1018193066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_4
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 875
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e17d441e161eb4dbacc8b9cf881f86
+      internalID: -1776685307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_5
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 875
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088a410b30ff4594884dfeabbaf37333
+      internalID: 177128648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_6
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 875
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe9523c9b91684488e095b7c109fe74
+      internalID: -2052987641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_7
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 875
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f72c29c3bea9d4196e2ae6f9d4d6ca
+      internalID: -1772576736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_8
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 875
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1b6a10905989a42b10d5c4e7de6976
+      internalID: 728326743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_9
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 875
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ed5e89a0b14a14aa5ac2d448da0230
+      internalID: -1088263036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_10
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 875
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e02c8f72ff1f0e498202fd03a48da70
+      internalID: -72527173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_11
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 875
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7ec69da928dd44e8f48cab3cb9d729
+      internalID: 945152644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_12
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 875
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5c2bb0c1b9f184f87c78a161c482c6
+      internalID: 1677512161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 726
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe09bf5983f4374bb103c46caeabcfa
+      internalID: -1831926572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_14
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 726
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6120300a9b85e44390d6345ec099d10
+      internalID: -905418790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_15
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 726
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97221e29dfa734b498988a562126d40b
+      internalID: 535735727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_16
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 726
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f560427a6ad1b4a489729bdf0e7bf4fa
+      internalID: -983091915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_17
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 726
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3669ba4da81b1d14a931035d1237c933
+      internalID: 1560715702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_18
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 726
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758a9b53b5addae41843e4b5abc1fca0
+      internalID: 313594759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_19
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 726
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11817a9345c7a6408c89a0fbaf7ffcd
+      internalID: -196909865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_20
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 726
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6f2047cdc7bd0458fd68cdf9b53f7f
+      internalID: -43577665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_21
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 726
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81774aa2a80ab084bba59024bbd60373
+      internalID: 900781510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_22
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 726
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c10f95c345db414f9b68d4e50a0c989
+      internalID: 90072599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_23
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 726
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8370310eedced43a8b18d8e733319f
+      internalID: -573808859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_24
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 726
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144f1a5785dc90d4ebbde450eed4ccde
+      internalID: -1152439411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_25
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 726
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34cef83a1c39374987f3f9449767751
+      internalID: 330681410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 577
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb65f9a1359effd4ab9bf64c1b9fc82e
+      internalID: 1814492414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_27
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 577
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c36cfe247ab24540874b14b25b64c1d
+      internalID: -1620495761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_28
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 577
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d10f86266722f542b8b08627046c73c
+      internalID: -811720476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_29
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 577
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9041f23e2266041a94e1b97dddec60
+      internalID: -1126927445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_30
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 577
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff7bb1dc3a8b94469bc9099511f703e
+      internalID: -149515190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_31
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 577
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c696e48b8b8995d40a7a0094e48a130a
+      internalID: 1533296138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_32
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 577
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b775ece8ff1aebe448b06406d2302265
+      internalID: -1309020967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_33
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 577
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2948cc7c0cdb85d42a49da7bf88982f4
+      internalID: -1613421937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_34
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 577
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b285fa9fe82f93847a24fa6b55518fbb
+      internalID: 1423183447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_35
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 577
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c10711da730dce4db2b325d8a43b414
+      internalID: 1072509234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_36
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 577
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba25e7aae7fbd9547ba7b032c5f3f798
+      internalID: -1205307522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_37
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 577
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3363e3226254cf74189f2caf947546d1
+      internalID: 2145850629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_38
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 577
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d9e535b00850f4dace575b6afcfb6a
+      internalID: -69639632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 428
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4baeaae4e66627c4b824cbbc255c78d4
+      internalID: -45397657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_40
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 428
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f28a9b811608f9498742cdf71f23928
+      internalID: 2112488771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_41
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 428
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80acd92bac828644db6d19e338b0cb20
+      internalID: -409972776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_42
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 428
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8ec44d9c1e7454282bd71f1843ac29
+      internalID: 426582088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_43
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 428
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6690d4e4e03f966488ac5c0e8b42866f
+      internalID: -1980630608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_44
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 428
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c5ad2ddabd5bd44ace45b425591707
+      internalID: 897567140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_45
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 428
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db86e2e350c9af449b191fe5f0246af5
+      internalID: 8695134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_46
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 428
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a94f6cba941b847b34ec35829106a6
+      internalID: 1443973994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_47
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 428
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2062f0459f09ef3489b5ca1999c7fe5e
+      internalID: 1664935946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_48
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 428
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8d810c6ef64384e8f205f1fccb950d
+      internalID: -1837244851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_49
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 428
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf6b260855da0749a50f3656e6a23cb
+      internalID: -2020740111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_50
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 428
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fbac79203cd064998a04f0e425c03e
+      internalID: -1374690813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_51
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 428
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f297325a831165a4abaa47016bc2cb50
+      internalID: 852281047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 279
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba967c3349145c4ba4f0014b3d27700
+      internalID: -378170600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_53
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 279
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fbaf4529d0ec4478018c7fc8daea36
+      internalID: 1960221238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_54
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 279
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4879602f651c044b24a985b74221cb
+      internalID: -1325729900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_55
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 279
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210e8a76c036a094f99dc17f7e3c3350
+      internalID: 806719258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_56
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 279
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489e9a1cc8e6dc543856d9b551eea330
+      internalID: 1255405322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_57
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 279
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629213f31ca9cfd4ea535d6eea81ed5c
+      internalID: 1325378503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_58
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 279
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482d64e9ff001b7468e84dc81f7d149a
+      internalID: 1793446980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_59
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 279
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2adec7e605fe04bbad9c39c1616b54
+      internalID: -1941337648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_60
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 279
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1435da0faafbadf4b84f08358d523621
+      internalID: -765329240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_61
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 279
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c6dd0a32c4d3946a7e3ebf389b36d8
+      internalID: 1671743875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_62
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 279
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94efca1f974a12f4fa761279174f380d
+      internalID: 1750570278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_63
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 279
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd63874857a76f4d82aa1317fec876e
+      internalID: -1912499953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_64
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 279
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542a577262d6a0a459041d3959c7f2cc
+      internalID: -842712701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff37c729f95fa7f41a185ca4e410a8f8
+      internalID: -784411529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_66
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 130
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61cc450bd90df6643be99bfa88cf2fd3
+      internalID: 641229836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_67
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 130
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa21ee1359c98440afa47e4b011aa28
+      internalID: 1019826162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_68
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 130
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a0c826f94bd1f4dbfb946f8273241c
+      internalID: 1891002117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_69
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 130
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9389a1fe4d19344bbaf049f91e5e1e
+      internalID: 1694260598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_70
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 130
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0918bfc9a18060c4bb5d8753b59346f0
+      internalID: -350827522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_71
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 130
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e866c06a4ee32f440b28270feec13e8b
+      internalID: 1365838780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_72
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 130
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc6db65bebc4034fb7ea587d371e801
+      internalID: -112675863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_73
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 130
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207b65c5ab25c49429f0b0e11dddcead
+      internalID: 26828507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spotQUEST_TODO_74
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 130
+        width: 152
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e94996da26b7647a9b2992bb456966
+      internalID: 137851399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      spotQUEST_TODO_77: -980677258
+      spotQUEST_TODO_5: 177128648
+      spotQUEST_TODO_2: 162267131
+      spotQUEST_TODO_7: -1772576736
+      spotQUEST_TODO_31: 1533296138
+      spotQUEST_TODO_75: -300830504
+      spotQUEST_TODO_50: -1374690813
+      spotQUEST_TODO_46: 1443973994
+      spotQUEST_TODO_6: -2052987641
+      spotQUEST_TODO_9: -1088263036
+      spotQUEST_TODO_22: 90072599
+      spotQUEST_TODO_45: 8695134
+      spotQUEST_TODO_11: 945152644
+      spotQUEST_TODO_1: 1206675976
+      spotQUEST_TODO_23: -573808859
+      spotQUEST_TODO_69: 1694260598
+      spotQUEST_TODO_25: 330681410
+      spotQUEST_TODO_48: -1837244851
+      spotQUEST_TODO_26: 1814492414
+      spotQUEST_TODO_0: -1322978308
+      spotQUEST_TODO_40: 2112488771
+      spotQUEST_TODO_36: -1205307522
+      spotQUEST_TODO_21: 900781510
+      spotQUEST_TODO_43: -1980630608
+      spotQUEST_TODO_70: -350827522
+      spotQUEST_TODO_72: -112675863
+      spotQUEST_TODO_62: 1750570278
+      spotQUEST_TODO_76: 1925704226
+      spotQUEST_TODO_49: -2020740111
+      spotQUEST_TODO_66: 641229836
+      spotQUEST_TODO_32: -1309020967
+      spotQUEST_TODO_20: -43577665
+      spotQUEST_TODO_54: -1325729900
+      spotQUEST_TODO_55: 806719258
+      spotQUEST_TODO_61: 1671743875
+      spotQUEST_TODO_34: 1423183447
+      spotQUEST_TODO_37: 2145850629
+      spotQUEST_TODO_67: 1019826162
+      spotQUEST_TODO_29: -1126927445
+      spotQUEST_TODO_56: 1255405322
+      spotQUEST_TODO_68: 1891002117
+      spotQUEST_TODO_28: -811720476
+      spotQUEST_TODO_17: 1560715702
+      spotQUEST_TODO_64: -842712701
+      spotQUEST_TODO_47: 1664935946
+      spotQUEST_TODO_51: 852281047
+      spotQUEST_TODO_52: -378170600
+      spotQUEST_TODO_10: -72527173
+      spotQUEST_TODO_18: 313594759
+      spotQUEST_TODO_53: 1960221238
+      spotQUEST_TODO_58: 1793446980
+      spotQUEST_TODO_8: 728326743
+      spotQUEST_TODO_73: 26828507
+      spotQUEST_TODO_4: -1776685307
+      spotQUEST_TODO_33: -1613421937
+      spotQUEST_TODO_60: -765329240
+      spotQUEST_TODO_63: -1912499953
+      spotQUEST_TODO_41: -409972776
+      spotQUEST_TODO_27: -1620495761
+      spotQUEST_TODO_14: -905418790
+      spotQUEST_TODO_35: 1072509234
+      spotQUEST_TODO_59: -1941337648
+      spotQUEST_TODO_44: 897567140
+      spotQUEST_TODO_12: 1677512161
+      spotQUEST_TODO_15: 535735727
+      spotQUEST_TODO_3: 1018193066
+      spotQUEST_TODO_38: -69639632
+      spotQUEST_TODO_57: 1325378503
+      spotQUEST_TODO_74: 137851399
+      spotQUEST_TODO_65: -784411529
+      spotQUEST_TODO_19: -196909865
+      spotQUEST_TODO_71: 1365838780
+      spotQUEST_TODO_39: -45397657
+      spotQUEST_TODO_16: -983091915
+      spotQUEST_TODO_24: -1152439411
+      spotQUEST_TODO_13: -1831926572
+      spotQUEST_TODO_30: -149515190
+      spotQUEST_TODO_42: 426582088
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

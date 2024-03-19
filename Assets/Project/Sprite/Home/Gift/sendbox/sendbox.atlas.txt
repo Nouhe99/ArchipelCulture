@@ -1,0 +1,13 @@
+sendbox.png
+size:860,368
+filter:Linear,Linear
+pma:true
+box_foam
+bounds:760,68,296,96
+rotate:90
+box_sendbox
+bounds:405,7,353,357
+top_sendbox
+bounds:2,2,362,401
+offsets:0,39,362,480
+rotate:90

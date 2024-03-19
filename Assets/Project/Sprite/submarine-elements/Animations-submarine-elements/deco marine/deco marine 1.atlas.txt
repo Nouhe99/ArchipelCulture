@@ -1,0 +1,10 @@
+deco marine 1.png
+size:512,256
+filter:Linear,Linear
+pma:true
+deco marines/genric_wave
+bounds:263,11,181,202
+rotate:90
+deco marines/rock3
+bounds:2,2,190,259
+rotate:90
