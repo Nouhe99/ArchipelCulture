@@ -42,7 +42,7 @@ public class TopBarPanel : MonoBehaviour
         List<Reward> codeRewards = new();
         List<string> scenariosUnlocked = new();
         int resultCode = 0;
-        yield return StartCoroutine(Database.Instance?.SubmitCode(inputCode.text, (result, rewards, scenarios) => { resultCode = result; codeRewards = rewards; scenariosUnlocked = scenarios; }));
+     //   yield return StartCoroutine(Database.Instance?.SubmitCode(inputCode.text, (result, rewards, scenarios) => { resultCode = result; codeRewards = rewards; scenariosUnlocked = scenarios; }));
 
         CleanCode();
 
@@ -251,7 +251,7 @@ public class TopBarPanel : MonoBehaviour
         {
             UIManager.ShowFullScreenDialog($"Bienvenue!\r\n\r\n\r\nPour commencer, tu peux regarder le tutoriel en appuyant sur <size=200%><sprite=0></size> puis sur <size=200%><sprite=1></size>\r\n\r\n\r\n<size=80%><i>Continuer...</i></size> ");
             Database.Instance.userData.tutorialStep++;
-            Database.Instance.StartCoroutine(Database.Instance.UpdateTutorialProgression());
+          //  Database.Instance.StartCoroutine(Database.Instance.UpdateTutorialProgression());
         }
     }
 
@@ -361,10 +361,10 @@ public class TopBarPanel : MonoBehaviour
             System.IO.Directory.CreateDirectory(temp);
 #endif
         var bytes = image.EncodeToPNG();
-        var file = new FileStream(temp + "/Ile_" + Database.Instance.userData.username + "_" + System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".png", FileMode.Create, FileAccess.Write);
-        var binary = new BinaryWriter(file);
-        binary.Write(bytes);
-        file.Close();
+        //var file = new FileStream(temp + "/Ile_" + Database.Instance.userData.username + "_" + System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".png", FileMode.Create, FileAccess.Write);
+       // var binary = new BinaryWriter(file);
+       // binary.Write(bytes);
+       // file.Close();
         //ScreenCapture.CaptureScreenshot(temp + "/Ile_" + Database.Instance.userData.namePlayer + "_" + System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".png");
         yield return new WaitForSeconds(0.15f);
 

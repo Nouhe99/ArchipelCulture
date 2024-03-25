@@ -1,15 +1,14 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 [CreateAssetMenu(menuName = "ScriptableObject/User Data")]
 public class UserData : ScriptableObject
 {
-    [Header("Profil")]
+
+
+[Header("Profil")]
     public AccountType accountType;
-    public string id;
-    public string code;
-    public string username;
-    public string profilPicture;
     public byte tutorialStep; //0 mean not started ; 1 mean finished first step ; ...
 
     public event OnVariableChangeDelegate OnVariableChange = delegate { };

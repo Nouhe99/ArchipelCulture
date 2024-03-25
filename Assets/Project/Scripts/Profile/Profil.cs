@@ -49,50 +49,50 @@ public class Profil : MonoBehaviour
             onlinePanel.SetActive(false);
             localPanel.SetActive(true);
         }
-        StartCoroutine(LoadProfil());
+        //StartCoroutine(LoadProfil());
     }
 
-    private bool profilLoaded = false;
-    private IEnumerator LoadProfil()
-    {
-        profilLoaded = false;
-        usernameText.text = Database.Instance.userData.username;
-        usernameTextNoEdit.text = Database.Instance.userData.username;
-        titleText.text = Database.Instance.userData.title;
-        idText.text = Database.Instance.userData.code;
-        pictureProfil.sprite = Database.Instance.profilPictures.GetPicture(Database.Instance.userData.profilPicture);
-        UpdateResources();
-        yield return StartCoroutine(levelBar.UpdateFillBarCoroutine());
+    //private bool profilLoaded = false;
+    //private IEnumerator LoadProfil()
+    //{
+    //    profilLoaded = false;
+    //    usernameText.text = Database.Instance.userData.username;
+    //    usernameTextNoEdit.text = Database.Instance.userData.username;
+    //    titleText.text = Database.Instance.userData.title;
+    //    idText.text = Database.Instance.userData.code;
+    //   // pictureProfil.sprite = Database.Instance.profilPictures.GetPicture(Database.Instance.userData.profilPicture);
+    //    UpdateResources();
+    //    yield return StartCoroutine(levelBar.UpdateFillBarCoroutine());
 
         
-        profilLoaded = true;
-    }
-    private void OnEnable()
-    {
-        if (profilLoaded) StartCoroutine(levelBar.UpdateFillBarCoroutine());
-        UpdateResources();
-    }
-    #endregion
+    //    profilLoaded = true;
+    //}
+    //private void OnEnable()
+    //{
+    //    if (profilLoaded) StartCoroutine(levelBar.UpdateFillBarCoroutine());
+    //    UpdateResources();
+    //}
+    //#endregion
 
-    private void OnApplicationPause(bool pauseStatus)
-    {
-        bool paused = pauseStatus;
-        if (paused)
-        {
-            //backup datas
-            //TODO: save on local version too
-            StartCoroutine(Database.Instance.UpdateProfilInfos());
-        }
-    }
+    //private void OnApplicationPause(bool pauseStatus)
+    //{
+    //    bool paused = pauseStatus;
+    //    if (paused)
+    //    {
+    //        //backup datas
+    //        //TODO: save on local version too
+    //        StartCoroutine(Database.Instance.UpdateProfilInfos());
+    //    }
+    //}
 
-    [HideInInspector] public bool nameHasChanged = false;
-    [HideInInspector] public bool titleHasChanged = false;
-    [HideInInspector] public bool pictureHasChanged = false;
-    [HideInInspector] public string pswHasChanged = null;
-    public void UpdateDB()
-    {
-        StartCoroutine(Database.Instance.UpdateProfilInfos());
-    }
+    //[HideInInspector] public bool nameHasChanged = false;
+    //[HideInInspector] public bool titleHasChanged = false;
+    //[HideInInspector] public bool pictureHasChanged = false;
+    //[HideInInspector] public string pswHasChanged = null;
+    //public void UpdateDB()
+    //{
+    //    StartCoroutine(Database.Instance.UpdateProfilInfos());
+    //}
 
     public void MoveScrollRectUp(ScrollRect scr)
     {
@@ -105,73 +105,73 @@ public class Profil : MonoBehaviour
     }
    
 
-    #region Open Close Tab
-    public void CloseActualTab()
-    {
-        if (titleTab.gameObject.activeInHierarchy)
-        {
-            titleTab.gameObject.SetActive(false);
-            profilTab.gameObject.SetActive(true);
-        }
+    ////#region Open Close Tab
+    ////public void CloseActualTab()
+    ////{
+    ////    if (titleTab.gameObject.activeInHierarchy)
+    ////    {
+    ////        titleTab.gameObject.SetActive(false);
+    ////        profilTab.gameObject.SetActive(true);
+    ////    }
       
-        else if (pictureTab.gameObject.activeInHierarchy)
-        {
-            pictureTab.gameObject.SetActive(false);
-            profilTab.gameObject.SetActive(true);
-        }
-        else if (pswTab.gameObject.activeInHierarchy)
-        {
-            pswTab.gameObject.SetActive(false);
-            profilTab.gameObject.SetActive(true);
-        }
-        else if (profilTab.gameObject.activeInHierarchy)
-        {
-            StartCoroutine(Database.Instance.UpdateProfilInfos());
-            gameObject.SetActive(false);
-        }
-    }
-    public void CloseProfilWindow()
-    {
-        UIManager.current.CloseCurrentPanel();
-    }
-    public void ReorganizeTabs()
-    {
-        if (!profilTab.gameObject.activeInHierarchy)
-            profilTab.gameObject.SetActive(true);
-        if (titleTab.gameObject.activeInHierarchy)
-            titleTab.gameObject.SetActive(false);
+    ////    else if (pictureTab.gameObject.activeInHierarchy)
+    ////    {
+    ////        pictureTab.gameObject.SetActive(false);
+    ////        profilTab.gameObject.SetActive(true);
+    ////    }
+    ////    else if (pswTab.gameObject.activeInHierarchy)
+    ////    {
+    ////        pswTab.gameObject.SetActive(false);
+    ////        profilTab.gameObject.SetActive(true);
+    ////    }
+    ////    else if (profilTab.gameObject.activeInHierarchy)
+    ////    {
+    ////        StartCoroutine(Database.Instance.UpdateProfilInfos());
+    ////        gameObject.SetActive(false);
+    ////    }
+    ////}
+    ////public void CloseProfilWindow()
+    ////{
+    ////    UIManager.current.CloseCurrentPanel();
+    ////}
+    ////public void ReorganizeTabs()
+    ////{
+    ////    if (!profilTab.gameObject.activeInHierarchy)
+    ////        profilTab.gameObject.SetActive(true);
+    ////    if (titleTab.gameObject.activeInHierarchy)
+    ////        titleTab.gameObject.SetActive(false);
        
-        else if (pictureTab.gameObject.activeInHierarchy)
-            pictureTab.gameObject.SetActive(false);
-        else if (pswTab.gameObject.activeInHierarchy)
-            pswTab.gameObject.SetActive(false);
-    }
+    ////    else if (pictureTab.gameObject.activeInHierarchy)
+    ////        pictureTab.gameObject.SetActive(false);
+    ////    else if (pswTab.gameObject.activeInHierarchy)
+    ////        pswTab.gameObject.SetActive(false);
+    ////}
 
    
-    public void OpenTitleList()
-    {
-        if (profilTab.gameObject.activeInHierarchy)
-            profilTab.gameObject.SetActive(false);
-        if (!titleTab.gameObject.activeInHierarchy)
-            titleTab.gameObject.SetActive(true);
-    }
-    public void OpenPictureList()
-    {
-        if (profilTab.gameObject.activeInHierarchy)
-            profilTab.gameObject.SetActive(false);
-        if (!pictureTab.gameObject.activeInHierarchy)
-            pictureTab.gameObject.SetActive(true);
-    }
+    ////public void OpenTitleList()
+    ////{
+    ////    if (profilTab.gameObject.activeInHierarchy)
+    ////        profilTab.gameObject.SetActive(false);
+    ////    if (!titleTab.gameObject.activeInHierarchy)
+    ////        titleTab.gameObject.SetActive(true);
+    ////}
+    ////public void OpenPictureList()
+    ////{
+    ////    if (profilTab.gameObject.activeInHierarchy)
+    ////        profilTab.gameObject.SetActive(false);
+    ////    if (!pictureTab.gameObject.activeInHierarchy)
+    ////        pictureTab.gameObject.SetActive(true);
+    ////}
 
-    public void OpenPsw()
-    {
-        if (profilTab.gameObject.activeInHierarchy)
-            profilTab.gameObject.SetActive(false);
-        if (!pswTab.gameObject.activeInHierarchy)
-            pswTab.gameObject.SetActive(true);
-    }
+    ////public void OpenPsw()
+    ////{
+    ////    if (profilTab.gameObject.activeInHierarchy)
+    ////        profilTab.gameObject.SetActive(false);
+    ////    if (!pswTab.gameObject.activeInHierarchy)
+    ////        pswTab.gameObject.SetActive(true);
+    ////}
 
-    #endregion
+    ////#endregion
 
     #region Resources
     public void UpdateResources()
@@ -184,5 +184,5 @@ public class Profil : MonoBehaviour
         }
     }
     #endregion
-
+    #endregion
 }

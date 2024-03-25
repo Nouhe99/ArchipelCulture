@@ -160,12 +160,12 @@ public class ScenarioManager : MonoBehaviour
             await helperDialogAnimation.AnimateFromStartToEndAsync();
             if (helperDialog != null)
             {
-                helperDialog.say(text);
+                //helperDialog.say(text);
             }
             await Task.Delay(dialogDelayInMilliseconds);
             if (helperDialog != null)
             {
-                helperDialog.stop();
+               // helperDialog.stop();
                 HideDialog();
             }
         }

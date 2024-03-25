@@ -166,13 +166,14 @@ public class RewardManager : MonoBehaviour
             {
                 Database.Instance.userData.rocksRemaining += rewards[currentItemIndex].Quantity;
                 if (FindObjectOfType<IslandBuilder>()) IslandBuilder.current.UpdateRocks();
-                StartCoroutine(SaveDataInventory.Instance.UpdateItemPlacedDatabase());
+               // StartCoroutine(SaveDataInventory.Instance.UpdateItemPlacedDatabaseLocal());
             }
             else
             {
                 //TODO: add for other type of item (Boat, ground, title, profilpicture)
             }
-            StartCoroutine(SaveDataInventory.Instance.UpdateItemBuyDatabase());
+            //StartCoroutine(SaveDataInventory.Instance.UpdateItemBuyDatabase());
+            SaveDataInventory.Instance.UpdateItemBuyDatabaseLocal();
             ActiveItemButton();
         }
     }

@@ -100,8 +100,7 @@ public class Shop : MonoBehaviour
 
         SaveDataInventory.Instance.AddBuyObj(currentItem); //store item id for update in database
 
-        //verify titles for number of gold spent
-        UIManager.current.unlockTitles.Verify(Database.Instance.userData.totalGoldSpent, UnlockTitle.TitleCategory.Magasin);
+      
 
         //remove from buying slot
         shopSlot.ResetSlot();

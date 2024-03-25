@@ -205,7 +205,7 @@ public class QuestionPanel : MonoBehaviour
         }
 
         yield return Database.Instance.StartCoroutine(Database.Instance.UpdateStudentAnswersCoroutine(sentAnswers));
-        Database.Instance.StartCoroutine(Database.Instance.UpdateQuizProgress(sentAnswers, GetActiveScenarioId()));
+      //  Database.Instance.StartCoroutine(Database.Instance.UpdateQuizProgress(sentAnswers, GetActiveScenarioId()));
         if (correctAnswer)
         {
             PlayAudio.Instance?.PlayOneShot(PlayAudio.Instance.bank.goodAnswer);

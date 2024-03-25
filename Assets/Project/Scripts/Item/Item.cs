@@ -115,7 +115,6 @@ public class Item : ReplaceableOnMap
             SaveDataInventory.Instance.AddPlacedObj(id, area.position.x, area.position.y, area.position.z, id_inventory);
 
             //verify new title
-            UIManager.current.unlockTitles.Verify(Database.Instance.userData.GetNumberItemPlaced(), UnlockTitle.TitleCategory.ConstructionDeco);
         }
     }
 

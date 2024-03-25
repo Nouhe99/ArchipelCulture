@@ -314,7 +314,7 @@ public class ItemFloor : Item
 
         // Verify title
         ItemFloor[] floors = UIManager.current.itemContener.GetComponentsInChildren<ItemFloor>();
-        UIManager.current.unlockTitles.Verify(floors.Length, UnlockTitle.TitleCategory.ConstructionMaison);
+        //UIManager.current.unlockTitles.Verify(floors.Length, UnlockTitle.TitleCategory.ConstructionMaison);
     }
 
     protected override bool CanBePlaced()

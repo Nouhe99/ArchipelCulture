@@ -26,7 +26,8 @@ public class InventoryUI : MonoBehaviour
             //backup on database
             if(SaveDataInventory.Instance != null)
             {
-                StartCoroutine(SaveDataInventory.Instance.UpdateItemPlacedDatabase());
+               // StartCoroutine(SaveDataInventory.Instance.UpdateItemPlacedDatabase());
+                SaveDataInventory.Instance.UpdateItemPlacedDatabaseLocal();
             }
             //Debug.LogFormat("<i>PAUSED !</i>");
         }
@@ -57,7 +58,7 @@ public class InventoryUI : MonoBehaviour
 
             //backup on database
             if (SaveDataInventory.Instance != null) //TO DO : change this for local version.
-                StartCoroutine(SaveDataInventory.Instance.UpdateItemPlacedDatabase());
+                SaveDataInventory.Instance.SaveInventoryToLocal();
 
             //change bounds for the camera
             if (changeBoundsEvent != null)

@@ -15,9 +15,11 @@ public class IslandBuilder : MonoBehaviour
 {
 
     public static IslandBuilder current;
+    string rocksRemainingFilePath;
     private void Awake()
     {
         current = this;
+        rocksRemainingFilePath = Path.Combine(Application.persistentDataPath, "rocksRemainingJson.txt");
     }
 
 
@@ -57,6 +59,7 @@ public class IslandBuilder : MonoBehaviour
         get => stateNumber;
     }
 
+   
     #region Plus tiles
 
     private void PlacePlusTiles()
@@ -135,8 +138,7 @@ public class IslandBuilder : MonoBehaviour
         //    }
         //}
 
-        //check unlock title (the 4 bases tiles are in islandTiles) 
-        UIManager.current.unlockTitles.Verify(islandTiles.Count - 4, UnlockTitle.TitleCategory.ConstructionIle);
+        
 
         Instantiate(fxSplash, islandTilemap.CellToWorld(position), fxSplash.transform.rotation, gameObject.transform);
         if (PlayAudio.Instance != null) PlayAudio.Instance.PlayOneShot(audioSplash);
@@ -377,8 +379,6 @@ public class IslandBuilder : MonoBehaviour
     {
         placeholderTilemap.gameObject.SetActive(open);
     }
-
-    string rocksRemainingFilePath = Path.Combine(Application.persistentDataPath, "rocksRemainingJson.txt");
 
     [SerializeField] private List<Sprite> listImgRocks = new();
 

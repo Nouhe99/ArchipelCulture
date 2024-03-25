@@ -11,6 +11,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public SceneController sceneController;
+    private GameManager gameManager;
 
     [Header("Panels")]
     public Canvas mainCanvas;
@@ -29,8 +30,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject fingerIcon;
     public Success notificationSuccess;
     public UnlockTitle unlockTitles = new();
-   // public GameObject giftObject;
-    //public GameObject giftNotification;
     public GameObject boatObject;
     public Sprite boatSpriteGoAway;
 
@@ -68,16 +67,8 @@ public class UIManager : MonoBehaviour
     {
         current = this;
         _cam = Camera.main;
+        gameManager = FindObjectOfType<GameManager>();
         //if(PlayAudio.Instance != null) PlayAudio.Instance.PlayMusic(PlayAudio.Instance.bank.beach, "fx");
-
-        //Things to do if we are in local
-     /*   if (Database.Instance.IsPublicAccount())
-        {
-            Debug.Log("public");
-           // giftObject.SetActive(false);
-            //SaveDataInventory.current.ReadInventoryFile();
-        }
-        //Database.Instance?.StartCoroutine(Database.Instance.GetSpecialScenarios());*/
     }
 
     private bool isIslandFriend = false;
@@ -102,176 +93,162 @@ public class UIManager : MonoBehaviour
         {
             buttonBuilder.onClick.AddListener(() => OpenClosePanel(Panel.Builder));
         }
-        if (buttonProfil != null)
-        {
-            buttonProfil.onClick.AddListener(() => OpenClosePanel(Panel.Profil));
-        }
+
+        #endregion
+        PlaceIslandTiles();
+        FillInventoryAndPlacement();
+        FillShop();
+
+
+        #region Fill Inventory & Placement (probably to delete)
+        //// Utilisez un chemin de fichier local pour stocker et récupérer les données de placement des éléments
+        //string itemFilePath = Path.Combine(Application.persistentDataPath, "itemPlacementJson.txt");
+        //string buildingFilePath = Path.Combine(Application.persistentDataPath, "buildingPlacementJson.txt");
+
+        //List<UserData.ItemPlacement> inventory = new List<UserData.ItemPlacement>();
+        //Vector3Int buildingPlacement = Vector3Int.zero;
+
+        //// Vérifiez si le fichier des éléments existe, sinon créez-le
+        //if (File.Exists(itemFilePath))
+        //{
+        //    // Lisez les données du fichier des éléments
+        //    string itemJsonData = File.ReadAllText(itemFilePath);
+        //    inventory = JsonConvert.DeserializeObject<List<UserData.ItemPlacement>>(itemJsonData);
+        //}
+        //else
+        //{
+        //    // Initialisez le fichier des éléments avec une liste vide si le fichier n'existe pas
+        //    File.WriteAllText(itemFilePath, "[]");
+        //}
+
+        //// Vérifiez si le fichier du placement du bâtiment existe, sinon créez-le
+        //if (File.Exists(buildingFilePath))
+        //{
+        //    // Lisez les données du fichier du placement du bâtiment
+        //    string buildingJsonData = File.ReadAllText(buildingFilePath);
+        //    buildingPlacement = JsonConvert.DeserializeObject<Vector3Int>(buildingJsonData);
+        //}
+        //else
+        //{
+        //    // Initialisez le fichier du placement du bâtiment avec une position par défaut si le fichier n'existe pas
+        //    File.WriteAllText(buildingFilePath, JsonConvert.SerializeObject(Vector3Int.zero));
+        //}
+
+        ////building placement
+        //floorContener.position = IslandBuilder.current.islandTilemap.CellToLocalInterpolated(buildingPlacement) + new Vector3(0, 0, buildingPlacement.x + buildingPlacement.y - 1);
+        //List<ItemFloor> placedFloors = new();
+        //foreach (UserData.ItemPlacement item in inventory.OrderBy(item => item.z_pos))
+        //{
+        //    //TO DO : ajouter les photos de profil et les titres
+        //    Item refitem = itemsList.GetItemData(item.id);
+        //    if (!refitem)
+        //    {
+        //        Debug.LogWarning("This prefab's item (" + item.id + ") doesn't exist. You must create one");
+        //        continue;
+        //    }
+        //    refitem.id_inventory = item.id_inventory;
+        //    refitem.variante = item.variante;
+        //    refitem.area.position = new Vector3Int(item.x_pos, item.y_pos, item.z_pos);
+
+        //    if (!item.placed || !GridBuildingSystem.current.AreaHaveRocks(refitem.area))
+        //    {
+        //        // Item is not placed
+
+        //        // TODO : Change the state of refItem to not placed
+
+        //        // Add it to inventory
+        //        inventoryUI.AddNewSlot(refitem);
+        //    }
+        //    else
+        //    {
+        //        // Item is placed
+        //        // Instantiate it
+        //        GameObject tempObj = Instantiate(itemsList.GetItem(item.id), itemContener.transform);
+        //        Item tempItem = tempObj.GetComponent<Item>();
+        //        tempItem.placed = true;
+        //        tempItem.area.position = refitem.area.position;
+
+        //        if (refitem.type == ItemType.Decoration)
+        //        {
+        //            if (item.variante > 0 && tempItem.spriteMirror.Count > 0)
+        //            {
+        //                if (item.variante <= tempItem.spriteMirror.Count)
+        //                {
+        //                    tempItem.spriteMirror[item.variante - 1].gameObject.SetActive(true);
+        //                    tempItem.spriteRenderer.gameObject.SetActive(false);
+        //                }
+        //            }
+        //            tempObj.transform.localPosition = GridBuildingSystem.current.gridLayout.CellToLocalInterpolated(refitem.area.position) + new Vector3(0, 0, refitem.area.position.x + refitem.area.position.y - 1);
+        //            GridBuildingSystem.current.TakeArea(TileType.TakenByItem, refitem.area);
+        //        }
+        //        else if (refitem.type == ItemType.Building)
+        //        {
+        //            ItemFloor itemFloor = tempItem.GetComponent<ItemFloor>();
+
+        //            if (item.z_pos == 0)
+        //            {
+        //                if (itemFloor != null)
+        //                {
+        //                    placedFloors.Add(itemFloor);
+        //                }
+        //                tempObj.transform.localPosition = GridBuildingSystem.current.gridLayout.CellToLocalInterpolated(refitem.area.position) + new Vector3(0, 0, refitem.area.position.x + refitem.area.position.y - 1);
+        //                GridBuildingSystem.current.TakeArea(TileType.TakenByFloor, refitem.area);
+        //            }
+        //            else
+        //            {
+        //                ItemFloor parentFloor = placedFloors.Find(floor => floor.area.position == new Vector3Int(item.x_pos, item.y_pos, 0));
+        //                if (parentFloor)
+        //                {
+        //                    parentFloor.PlaceFloorOnTop(itemFloor);
+        //                }
+        //            }
+        //        }
+
+        //    }
+
+        //}
+
+        ////Building.current.ResetTower(); //place floors
+        ////if(Building.current.BottomFloor != null) GridBuildingSystem.current.TakeArea(new BoundsInt(Database.Instance.userData.buildingPlacement, Vector3Int.right * 2 + Vector3Int.
         #endregion
 
-        /*  #region Place Island Tile OLD
-          if (Database.Instance.userData.rockPlacementJson == "") Database.Instance.userData.rockPlacementJson = "[]";
-
-          List<UserData.TilePos> list = JsonConvert.DeserializeObject<List<UserData.TilePos>>(Database.Instance.userData.rockPlacementJson);
-          foreach (UserData.TilePos tile in list)
-          {
-              IslandBuilder.current.islandTiles.Add(new Vector3Int(tile.x_pos, tile.y_pos, 0), tile.style_tile);
-          }
-          IslandBuilder.current.LoadIslandTiles();
-
-          #endregion*/
 
 
-        #region Place Island Tile
-        // Utilisez un chemin de fichier local pour stocker et récupérer les données de placement des tuiles
-        string filePath = Path.Combine(Application.persistentDataPath, "rockPlacementJson.txt");
+        StartCoroutine(CameraBehavior.Instance.ResetCameraAtStartCoroutine());
 
-        List<UserData.TilePos> list = new List<UserData.TilePos>();
+        
 
-        // Vérifiez si le fichier existe, sinon créez-le
-        if (File.Exists(filePath))
+
+
+    }
+
+    #region Place Island Tile OLD
+    private void PlaceIslandTiles()
+    {
+        if (gameManager.userData.rockPlacementJson == "")
         {
-            Debug.Log("file exist");
-            // Lisez les données du fichier
-            string jsonData = File.ReadAllText(filePath);
-            list = JsonConvert.DeserializeObject<List<UserData.TilePos>>(jsonData);
-        }
-        else
-        {
-            Debug.Log("create file");
-            // Initialisez le fichier avec une liste vide si le fichier n'existe pas
-            File.WriteAllText(filePath, "[]");
+            gameManager.userData.rockPlacementJson = "[]";
+            gameManager.RequestSaveUserData();
         }
 
+
+        List<UserData.TilePos> list = JsonConvert.DeserializeObject<List<UserData.TilePos>>(gameManager.userData.rockPlacementJson);
         foreach (UserData.TilePos tile in list)
         {
-            Debug.Log("addingtile");
             IslandBuilder.current.islandTiles.Add(new Vector3Int(tile.x_pos, tile.y_pos, 0), tile.style_tile);
         }
         IslandBuilder.current.LoadIslandTiles();
+    }
 
-        #endregion
+    #endregion
 
-        /*    #region Fill Inventory & Placement OLD
-            //building placement
-            floorContener.position = IslandBuilder.current.islandTilemap.CellToLocalInterpolated(Database.Instance.userData.buildingPlacement) + new Vector3(0, 0, Database.Instance.userData.buildingPlacement.x + Database.Instance.userData.buildingPlacement.y - 1);
-            List<ItemFloor> placedFloors = new();
-            foreach (UserData.ItemPlacement item in Database.Instance.userData.inventory.OrderBy(item => item.z_pos))
-            {
-                //TO DO : ajouter les photos de profil et les titres
-                Item refitem = itemsList.GetItemData(item.id);
-                if (!refitem)
-                {
-                    Debug.LogWarning("This prefab's item (" + item.id + ") doesn't exist. You must create one");
-                    continue;
-                }
-                refitem.id_inventory = item.id_inventory;
-                refitem.variante = item.variante;
-                refitem.area.position = new Vector3Int(item.x_pos, item.y_pos, item.z_pos);
-
-                if (!item.placed || !GridBuildingSystem.current.AreaHaveRocks(refitem.area))
-                {
-                    // Item is not placed
-
-                    // TODO : Change the state of refItem to not placed
-
-                    // Add it to inventory
-                    inventoryUI.AddNewSlot(refitem);
-                }
-                else
-                {
-                    // Item is placed
-                    // Instantiate it
-                    GameObject tempObj = Instantiate(itemsList.GetItem(item.id), itemContener.transform);
-                    Item tempItem = tempObj.GetComponent<Item>();
-                    tempItem.placed = true;
-                    tempItem.area.position = refitem.area.position;
-
-                    if (refitem.type == ItemType.Decoration)
-                    {
-                        if (item.variante > 0 && tempItem.spriteMirror.Count > 0)
-                        {
-                            if (item.variante <= tempItem.spriteMirror.Count)
-                            {
-                                tempItem.spriteMirror[item.variante - 1].gameObject.SetActive(true);
-                                tempItem.spriteRenderer.gameObject.SetActive(false);
-                            }
-                        }
-                        tempObj.transform.localPosition = GridBuildingSystem.current.gridLayout.CellToLocalInterpolated(refitem.area.position) + new Vector3(0, 0, refitem.area.position.x + refitem.area.position.y - 1);
-                        GridBuildingSystem.current.TakeArea(TileType.TakenByItem, refitem.area);
-                    }
-                    else if (refitem.type == ItemType.Building)
-                    {
-                        ItemFloor itemFloor = tempItem.GetComponent<ItemFloor>();
-
-                        if (item.z_pos == 0)
-                        {
-                            if (itemFloor != null)
-                            {
-                                placedFloors.Add(itemFloor);
-                            }
-                            tempObj.transform.localPosition = GridBuildingSystem.current.gridLayout.CellToLocalInterpolated(refitem.area.position) + new Vector3(0, 0, refitem.area.position.x + refitem.area.position.y - 1);
-                            GridBuildingSystem.current.TakeArea(TileType.TakenByFloor, refitem.area);
-                        }
-                        else
-                        {
-                            ItemFloor parentFloor = placedFloors.Find(floor => floor.area.position == new Vector3Int(item.x_pos, item.y_pos, 0));
-                            if (parentFloor)
-                            {
-                                parentFloor.PlaceFloorOnTop(itemFloor);
-                            }
-                        }
-                    }
-
-                }
-
-            }
-
-            //Building.current.ResetTower(); //place floors
-            //if(Building.current.BottomFloor != null) GridBuildingSystem.current.TakeArea(new BoundsInt(Database.Instance.userData.buildingPlacement, Vector3Int.right * 2 + Vector3Int.up * 2 + Vector3Int.forward));
-
-            inventoryUI.rocksRemainingText.text = Database.Instance.userData.rocksRemaining + "";
-
-            #endregion   */
-
-
-        #region Fill Inventory & Placement
-        // Utilisez un chemin de fichier local pour stocker et récupérer les données de placement des éléments
-        string itemFilePath = Path.Combine(Application.persistentDataPath, "itemPlacementJson.txt");
-        string buildingFilePath = Path.Combine(Application.persistentDataPath, "buildingPlacementJson.txt");
-
-        List<UserData.ItemPlacement> inventory = new List<UserData.ItemPlacement>();
-        Vector3Int buildingPlacement = Vector3Int.zero;
-
-        // Vérifiez si le fichier des éléments existe, sinon créez-le
-        if (File.Exists(itemFilePath))
-        {
-            // Lisez les données du fichier des éléments
-            string itemJsonData = File.ReadAllText(itemFilePath);
-            inventory = JsonConvert.DeserializeObject<List<UserData.ItemPlacement>>(itemJsonData);
-        }
-        else
-        {
-            // Initialisez le fichier des éléments avec une liste vide si le fichier n'existe pas
-            File.WriteAllText(itemFilePath, "[]");
-        }
-
-        // Vérifiez si le fichier du placement du bâtiment existe, sinon créez-le
-        if (File.Exists(buildingFilePath))
-        {
-            // Lisez les données du fichier du placement du bâtiment
-            string buildingJsonData = File.ReadAllText(buildingFilePath);
-            buildingPlacement = JsonConvert.DeserializeObject<Vector3Int>(buildingJsonData);
-        }
-        else
-        {
-            // Initialisez le fichier du placement du bâtiment avec une position par défaut si le fichier n'existe pas
-            File.WriteAllText(buildingFilePath, JsonConvert.SerializeObject(Vector3Int.zero));
-        }
-
+    #region Fill Inventory & Placement old
+    private void FillInventoryAndPlacement()
+    {
         //building placement
-        floorContener.position = IslandBuilder.current.islandTilemap.CellToLocalInterpolated(buildingPlacement) + new Vector3(0, 0, buildingPlacement.x + buildingPlacement.y - 1);
+        floorContener.position = IslandBuilder.current.islandTilemap.CellToLocalInterpolated(gameManager.userData.buildingPlacement) + new Vector3(0, 0, gameManager.userData.buildingPlacement.x + gameManager.userData.buildingPlacement.y - 1);
         List<ItemFloor> placedFloors = new();
-        foreach (UserData.ItemPlacement item in inventory.OrderBy(item => item.z_pos))
+        foreach (UserData.ItemPlacement item in gameManager.userData.inventory.OrderBy(item => item.z_pos))
         {
             //TO DO : ajouter les photos de profil et les titres
             Item refitem = itemsList.GetItemData(item.id);
@@ -343,15 +320,17 @@ public class UIManager : MonoBehaviour
         }
 
         //Building.current.ResetTower(); //place floors
-        //if(Building.current.BottomFloor != null) GridBuildingSystem.current.TakeArea(new BoundsInt(Database.Instance.userData.buildingPlacement, Vector3Int.right * 2 + Vector3Int.
-        #endregion
+        //if(Building.current.BottomFloor != null) GridBuildingSystem.current.TakeArea(new BoundsInt(Database.Instance.userData.buildingPlacement, Vector3Int.right * 2 + Vector3Int.up * 2 + Vector3Int.forward));
+
+        inventoryUI.rocksRemainingText.text = gameManager.userData.rocksRemaining + "";
+    }
 
 
+    #endregion
 
-        StartCoroutine(CameraBehavior.Instance.ResetCameraAtStartCoroutine());
-
-        #region Fill Shop
-
+    #region Fill Shop
+    private void FillShop()
+    {
         ///Key : tuple of the name of the item style and the item type.
         ///Value : category handler (transform)
         Dictionary<(Style, ItemType), Transform> allCategories = new();
@@ -388,11 +367,8 @@ public class UIManager : MonoBehaviour
 
         }
 
-        #endregion
-
-      
-
     }
+    #endregion
 
     #region Panels
     public enum Panel
@@ -411,7 +387,6 @@ public class UIManager : MonoBehaviour
     {
         if (!topBarPanel.gameObject.activeInHierarchy) topBarPanel.gameObject.SetActive(true);
         if (settingsPanel.activeInHierarchy) settingsPanel.SetActive(false);
-        if (profil.gameObject.activeInHierarchy) profil.gameObject.SetActive(false);
         if (shop.gameObject.activeInHierarchy) shop.gameObject.SetActive(false);
         if (!inventoryUI.gameObject.activeInHierarchy) inventoryUI.gameObject.SetActive(true);
         if (inventoryUI.sideBarOpen) inventoryUI.ShowBuildingPanel();
@@ -443,11 +418,7 @@ public class UIManager : MonoBehaviour
                 if (!inventoryUI.sideBarOpen) inventoryUI.ShowBuildingPanel();
                 break;
 
-            case Panel.Profil:
-                profil.ReorganizeTabs();
-                topBarPanel.TriggerPanel(profil.gameObject);
-                ActivateUIColliders(false);
-                break;
+          
 
             case Panel.Settings:
                 topBarPanel.TriggerSettingsPanel();
@@ -491,15 +462,7 @@ public class UIManager : MonoBehaviour
                 if (inventoryUI.sideBarOpen) inventoryUI.ShowBuildingPanel();
                 break;
 
-            case Panel.Profil:
-                if (profil.gameObject.activeInHierarchy)
-                {
-                    profil.ReorganizeTabs();
-                    topBarPanel.TriggerPanel(profil.gameObject);
-                    ActivateUIColliders(true);
-                }
-                break;         
-
+           
             case Panel.Settings:
                 if (settingsPanel.activeInHierarchy)
                 {
@@ -509,7 +472,8 @@ public class UIManager : MonoBehaviour
                 break;
 
             case Panel.Shop:
-                StartCoroutine(SaveDataInventory.Instance.UpdateItemBuyDatabase());
+               // StartCoroutine(SaveDataInventory.Instance.UpdateItemBuyDatabase());
+                SaveDataInventory.Instance.UpdateItemBuyDatabaseLocal();
                 if (shop.gameObject.activeInHierarchy)
                 {
                     topBarPanel.TriggerPanel(shop.gameObject);
