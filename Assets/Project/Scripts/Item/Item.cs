@@ -37,6 +37,8 @@ public class Item : ReplaceableOnMap
     [Header("Sfx")]
     public AudioClip soundClick;
 
+    
+
 
 
 
@@ -198,6 +200,7 @@ public class Item : ReplaceableOnMap
         {
             PlayAudio.Instance.PlayOneShot(soundClick);
         }
+      //  SaveDataInventory.Instance.SaveInventory();
     }
 
     /// <summary>
@@ -208,6 +211,12 @@ public class Item : ReplaceableOnMap
         UIManager.current.inventoryUI.AddNewSlot(this);
         SaveDataInventory.Instance.AddPlacedObj(id, 0, 0, 0, id_inventory, false);
         StartCoroutine(RemoveAnimation());
+
+
+
+      //  SaveDataInventory.Instance.SaveInventory();
+      //  SaveDataInventory.Instance.SavePlacedObjects();
+
     }
 
     public override void RemoveFromTilemap()

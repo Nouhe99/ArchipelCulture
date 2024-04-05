@@ -138,6 +138,7 @@ public class RewardManager : MonoBehaviour
         rewardID = rewards[currentItemIndex].Item.ID;
         if (currentItemIndex < rewards.Count)
         {
+            Debug.Log("reward");
             Item item = itemList.GetItemData(rewards[currentItemIndex].Item.ID);
 
             itemPanel.sprite = item.rarity.Background;
@@ -173,7 +174,9 @@ public class RewardManager : MonoBehaviour
                 //TODO: add for other type of item (Boat, ground, title, profilpicture)
             }
             //StartCoroutine(SaveDataInventory.Instance.UpdateItemBuyDatabase());
-            SaveDataInventory.Instance.UpdateItemBuyDatabaseLocal();
+
+            // SaveDataInventory.Instance.UpdateItemBuyDatabaseLocal(); need to be fixed
+
             ActiveItemButton();
         }
     }

@@ -10,12 +10,12 @@ public class CustomAiPath : MonoBehaviour
     public Path path;
     public float speed = 2;
     public float nextWaypointDistance = 3;
-    private int currentWaypoint = 0;
+    public int currentWaypoint = 0;
     public bool reachedEndOfPath;
 
-    [SerializeField] private GameObject destinationObjectPrefab;
-    private GameObject destinationObject;
-    [SerializeField] private LineRenderer pathLineRenderer;
+    [SerializeField] public GameObject destinationObjectPrefab;
+    public GameObject destinationObject;
+    [SerializeField] public LineRenderer pathLineRenderer;
 
 
     private void Awake()

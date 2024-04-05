@@ -1,6 +1,8 @@
 using System;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class Shop : MonoBehaviour
 {
@@ -13,7 +15,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private Image sizeImg;
     [SerializeField] private Button PrevButton;
     [SerializeField] private Button NextButton;
-    
+
     private ItemSlot shopSlot;
 
     [Header("Content")]
@@ -35,16 +37,16 @@ public class Shop : MonoBehaviour
         shopSlot = gameObject.GetComponentInChildren<ItemSlot>();
     }
 
-      private void NextButtonClick()
+    private void NextButtonClick()
     {
         currentItem.CycleSprites(1);
-        
+
     }
 
     private void PrevButtonClick()
     {
         currentItem.CycleSprites(-1);
-        
+
     }
 
     public Transform GetContentByType(ItemType it)
@@ -58,26 +60,27 @@ public class Shop : MonoBehaviour
     }
 
     public void PlaceItem()
-{
-    
-    hideSelector.SetActive(true);
-    if (selector.selected.GetComponent<Item>())
     {
-        
-        currentItem = selector.selected.GetComponent<Item>();
-        currentPrice = currentItem.price;
-        nameText.text = currentItem.nameItem;
-        rarityText.text = currentItem.rarity.Label;
-        costText.text = "x " + currentPrice;
-        string tempCoins = "Pièces";
-        if (currentPrice <= 1) tempCoins = "Pièce";
-        costText.text = "<font-weight=500>" + "Coût" + " <size=150%><font-weight=700><color=yellow>" + currentPrice + "</color></font-weight></size><size=80%> " + tempCoins + "</size></font-weight>";
-        sizeImg.sprite = currentItem.size.size_Sprite;
-        NextButton.onClick.AddListener(NextButtonClick);
-        PrevButton.onClick.AddListener(PrevButtonClick); 
+
+        hideSelector.SetActive(true);
+        if (selector.selected.GetComponent<Item>())
+        {
+
+            currentItem = selector.selected.GetComponent<Item>();
+            currentPrice = currentItem.price;
+            nameText.text = currentItem.nameItem;
+            rarityText.text = currentItem.rarity.Label;
+            costText.text = "x " + currentPrice;
+            string tempCoins = "Pièces";
+            if (currentPrice <= 1) tempCoins = "Pièce";
+            costText.text = "<font-weight=500>" + "Coût" + " <size=150%><font-weight=700><color=yellow>" + currentPrice + "</color></font-weight></size><size=80%> " + tempCoins + "</size></font-weight>";
+            sizeImg.sprite = currentItem.size.size_Sprite;
+            NextButton.onClick.AddListener(NextButtonClick);
+            PrevButton.onClick.AddListener(PrevButtonClick);
+
+        }
 
     }
-}
 
 
     public void BuyItem()
@@ -95,14 +98,13 @@ public class Shop : MonoBehaviour
         {
             Destroy(CoinsVFX, ps.main.duration);
         }
+
+        //update gold after buying
         Database.Instance.userData.gold -= currentPrice;
         Database.Instance.userData.totalGoldSpent += currentPrice;
-
-        SaveDataInventory.Instance.AddBuyObj(currentItem); //store item id for update in database
-
-      
-
-        //remove from buying slot
+        SaveDataInventory.Instance.AddBuyObj(currentItem);//store item id for update
+        UIManager.current.inventoryUI.AddNewSlot(currentItem);
+        SaveDataInventory.Instance.UpdateItemBuyDatabaseLocal();
         shopSlot.ResetSlot();
     }
 

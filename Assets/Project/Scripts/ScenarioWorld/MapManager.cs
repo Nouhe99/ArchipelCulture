@@ -48,11 +48,11 @@ public class MapManager : MonoBehaviour
             LogoTransition.Instance?.StartCoroutine(LogoTransition.Instance.LoadSceneAfterCoroutines(sceneController.HomeScene, "Retour au bercail..."));
         });
 
-        ButtonKraken.onClick.AddListener(() =>
-        {
-            BoatController.Instance.transform.position = new Vector3(70,37);
+        //ButtonKraken.onClick.AddListener(() =>
+        //{
+        //    BoatController.Instance.transform.position = new Vector3(70,37);
 
-        });
+        //});
     }
 
     /*

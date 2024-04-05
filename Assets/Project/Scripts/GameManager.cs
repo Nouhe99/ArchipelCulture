@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using System;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class UserConfig
@@ -15,6 +17,7 @@ public class GameManager : MonoBehaviour
 
     public UserData userData;
     private UserConfig userConfig;
+   
     private string userDataPath;
     private string userConfigPath;
 
@@ -35,6 +38,7 @@ public class GameManager : MonoBehaviour
         
         LoadUserData();
         LoadUserConfig();
+        SaveDataInventory.Instance.LoadInventoryFromLocal();
     }
 
     private void LoadUserData()
@@ -47,10 +51,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            // Create a new UserData object since it does not exist
-            userData = ScriptableObject.CreateInstance<UserData>();
-            // Here you may want to set default values or perform additional setup on userData
-            // Then you can save it to JSON if necessary
+            userData = new UserData();
             SaveUserData();
         }
     }
@@ -90,37 +91,55 @@ public class GameManager : MonoBehaviour
     {
         if (userConfig.isFirstConnection)
         {
-            Debug.Log("Handling first connection tasks.");
             // Perform first-time initialization tasks here
 
-            // Set the flag to false so this block won't run again
+            // Database.Instance.LoadUserDataFromLocal();
+            userData.ResetUserData();
+            Debug.Log("Handling first connection tasks.");
             userConfig.isFirstConnection = false;
             SaveUserConfig();
+        }
+        else
+        {
+            Database.Instance.LoadUserDataFromLocal();
+
+
         }
     }
 
 
-    public static void DeleteAllJsonFiles()
+    public  void DeleteAllDatas()
     {
-        DirectoryInfo directory = new DirectoryInfo(Application.persistentDataPath);
-        FileInfo[] jsonFiles = directory.GetFiles("*.json");
-
-        foreach (FileInfo file in jsonFiles)
+        SaveDataInventory.Instance.ResetInventory();
+        userData.ResetUserData();
+        string paths = Application.persistentDataPath;
+        try
         {
-            file.Delete();
-            Debug.Log($"Deleted file: {file.FullName}");
+            DirectoryInfo directory = new DirectoryInfo(paths);
+            foreach (FileInfo file in directory.GetFiles())
+            {
+                file.Delete();
+            }
+            foreach (DirectoryInfo subDirectory in directory.GetDirectories())
+            {
+                subDirectory.Delete(true);
+            }
         }
+        catch (Exception e)
+        {
+            Debug.LogError("An error occurred while trying to delete all game data: " + e.Message);
+        }
+           // SceneManager.LoadScene(1);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            DeleteAllJsonFiles(); // or DeleteSpecificJsonFile("userConfig.json");
+            DeleteAllDatas(); 
             Debug.Log("All JSON files deleted. Restarting game...");
-            // Optionally, reload the scene or restart the game logic as needed
+            // reload the scene or restart the game logic as needed
         }
     }
-    // Rest of your GameManager code...
 }
 

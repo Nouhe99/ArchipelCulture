@@ -44,11 +44,7 @@ public class Profil : MonoBehaviour
     #region Initialize Profil
     private void Start()
     {
-        if (Database.Instance.IsPublicAccount())
-        {
-            onlinePanel.SetActive(false);
-            localPanel.SetActive(true);
-        }
+       
         //StartCoroutine(LoadProfil());
     }
 

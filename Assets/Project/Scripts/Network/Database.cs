@@ -57,7 +57,8 @@ public class Database : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
             
-            LoadPlayerDataFromLocal(); // Load player data at start
+           // LoadPlayerDataFromLocal(); // Load player data at start
+            itemsList.UpdateDictionnary(); //load shop items
         }
         else
         {
@@ -67,6 +68,8 @@ public class Database : MonoBehaviour
        // DontDestroyOnLoad(gameObject);
         Debug.LogWarning($"Current environment : <b><color=yellow>{environment}</color></b>");
     }
+
+  
 
 
     public void LoadUserDataFromLocal()
@@ -79,15 +82,13 @@ public class Database : MonoBehaviour
         }
         else
         {
-            // Handle the case where there is no saved data
-            // You don't need to create a new instance if this is an existing ScriptableObject
+            Debug.Log("No existing UserData found. Initializing new player data.");
+            userData.ResetUserData();
         }
+        userData.LoadGold();
+        
     }
-    public bool IsPublicAccount()
-    {
-        return PlayerPrefs.GetInt("ACCTYPE", 0) == (int)AccountType.Public;
-    }
-
+    
 
     #region NewSavingSystem
     public void SavePlayerDataToLocal()
@@ -96,39 +97,7 @@ public class Database : MonoBehaviour
         File.WriteAllText(Application.persistentDataPath + "/playerData.json", jsonData);
     }
 
-    private void LoadPlayerDataFromLocal()
-    {
-        string filePath = Application.persistentDataPath + "/playerData.json";
-        if (File.Exists(filePath))
-        {
-            string jsonData = File.ReadAllText(filePath);
-            userData = JsonUtility.FromJson<UserData>(jsonData);
-        }
-        else
-        {
-            // userData = new UserData(); // Initialize new UserData if file doesn't exist
-            userData =  ScriptableObject.CreateInstance<UserData>();
-        }
-    }
-
-    private void LoadPlayerItemsFromLocal()
-    {
-        string filePath = Application.persistentDataPath + "/playerItems.json";
-        if (File.Exists(filePath))
-        {
-            string jsonData = File.ReadAllText(filePath);
-            List<UserData.ItemPlacement> loadedItems = JsonUtility.FromJson<List<UserData.ItemPlacement>>(jsonData);
-            if (loadedItems != null)
-            {
-                userData.inventory = loadedItems;
-            }
-        }
-        else
-        {
-            // Handle the case where there is no saved data, possibly initializing with default items
-        }
-    }
-
+    
     #endregion
 
     #region Load Game Datas
@@ -349,8 +318,8 @@ public class Database : MonoBehaviour
                     "{\"x_pos\": -4,\"y_pos\": -5,\"style_tile\": 1}]";
                 if (SaveDataInventory.Instance != null)
                 {
-                   // StartCoroutine(SaveDataInventory.Instance.UpdateItemPlacedDatabase());
-                    SaveDataInventory.Instance.UpdateItemPlacedDatabaseLocal();
+                    //SaveDataInventory.Instance.LoadPlacedObjects();
+
                 }
                 else
                 {

@@ -49,8 +49,8 @@ public class BoatController : MonoBehaviour
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.enabled = PlayAudio.Instance.IsSfxEnabled();
+       // audioSource = GetComponent<AudioSource>();
+       // audioSource.enabled = PlayAudio.Instance.IsSfxEnabled();
 
         if (sceneController.ActiveScene == sceneController.MissionScene)
         {

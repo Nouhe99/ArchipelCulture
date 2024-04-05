@@ -3,33 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Tilemaps;
+using Newtonsoft.Json;
 using System.IO;
-
-[System.Serializable]
-public class RockData
-{
-    public List<RockInfo> rocks = new List<RockInfo>();
-}
-
-[System.Serializable]
-public class RockInfo
-{
-    public int x, y, type;
-}
-
 
 
 
 /// <summary>
 /// Handler for rock tiles and boat placement.
 /// </summary>
-public class IslandBuilder : MonoBehaviour
+/// 
+//[System.Serializable]
+//public class RockData
+//{
+//    public List<RockInfo> rocks = new List<RockInfo>();
+//}
+
+//[System.Serializable]
+//public class RockInfo
+//{
+//    public int x;
+//    public int y;
+//    public int rockType;
+
+//    public RockInfo(int x, int y, int rockType)
+//    {
+//        this.x = x;
+//        this.y = y;
+//        this.rockType = rockType;
+//    }
+//}
+
+
+public class IslandBuilder1 : MonoBehaviour
 {
 
-    public static IslandBuilder current;
+    public static IslandBuilder1 currents;
+    string rocksRemainingFilePath;
     private void Awake()
     {
-        current = this;
+        currents = this;
+        rocksRemainingFilePath = Path.Combine(Application.persistentDataPath, "rocksRemainingJson.txt");
     }
 
 
@@ -69,42 +82,8 @@ public class IslandBuilder : MonoBehaviour
         get => stateNumber;
     }
 
+   
 
-    #region SaveRocks
-
-    public void SaveRocks()
-    {
-        RockData rockData = new RockData();
-        foreach (var tile in islandTiles)
-        {
-            rockData.rocks.Add(new RockInfo() { x = tile.Key.x, y = tile.Key.y, type = tile.Value });
-        }
-
-        string json = JsonUtility.ToJson(rockData, true);
-        File.WriteAllText(Application.persistentDataPath + "/rocks.json", json);
-    }
-    public void LoadRocks()
-    {
-        string filePath = Application.persistentDataPath + "/rocks.json";
-        if (File.Exists(filePath))
-        {
-            string json = File.ReadAllText(filePath);
-            RockData rockData = JsonUtility.FromJson<RockData>(json);
-
-            islandTiles.Clear();
-            foreach (var rock in rockData.rocks)
-            {
-                Vector3Int position = new Vector3Int(rock.x, rock.y, 0);
-                islandTiles.Add(position, rock.type);
-            }
-            // Now, visually reflect these changes
-            LoadIslandTiles();
-        }
-    }
-
-
-
-    #endregion
 
     #region Plus tiles
 
@@ -161,12 +140,11 @@ public class IslandBuilder : MonoBehaviour
 
         //Place rock
         islandTiles.Add(position, numberTile);
-        RemoveRockCounter();
+        RemoveRockCounter(islandTiles.Count);
         islandTilemap.SetTile(position, tile);
         GridBuildingSystem.current.tempTilemap.SetTile(position, null);
         islandTilemap.GetInstantiatedObject(position).GetComponent<ItemRock>().rockType = numberTile;
         SaveDataInventory.Instance.AddRockSave(position.x, position.y, numberTile);
-
 
         //int z = position.z;
         //for (int x = position.x - 1; x <= position.x + 1; x++)
@@ -185,12 +163,10 @@ public class IslandBuilder : MonoBehaviour
         //    }
         //}
 
-        //check unlock title (the 4 bases tiles are in islandTiles) 
-        //  UIManager.current.unlockTitles.Verify(islandTiles.Count - 4, UnlockTitle.TitleCategory.ConstructionIle);
+        
 
         Instantiate(fxSplash, islandTilemap.CellToWorld(position), fxSplash.transform.rotation, gameObject.transform);
         if (PlayAudio.Instance != null) PlayAudio.Instance.PlayOneShot(audioSplash);
-        SaveRocks();
     }
 
     //to do : use this method to initialise island at start
@@ -209,19 +185,19 @@ public class IslandBuilder : MonoBehaviour
         }
 
 
-        #region 2x2 tiles on top of the island
-        //keep the 2x2 tiles on top for building //NOTE: using FillBow doesn't work :'(
-        //islandTilemap.SetTile(Vector3Int.zero, UIManager.GetGroundRule(1));
-        //if (!islandTiles.ContainsKey(Vector3Int.zero)) islandTiles.Add(Vector3Int.zero, 1);
-        //islandTilemap.SetTile(Vector3Int.left, UIManager.GetGroundRule(1));
-        //if (!islandTiles.ContainsKey(Vector3Int.left)) islandTiles.Add(Vector3Int.left, 1);
-        //islandTilemap.SetTile(Vector3Int.down, UIManager.GetGroundRule(1));
-        //if (!islandTiles.ContainsKey(Vector3Int.down)) islandTiles.Add(Vector3Int.down, 1);
-        //islandTilemap.SetTile(Vector3Int.down + Vector3Int.left, UIManager.GetGroundRule(1));
-        //if (!islandTiles.ContainsKey(Vector3Int.down + Vector3Int.left)) islandTiles.Add(Vector3Int.down + Vector3Int.left, 1);
-        //GridBuildingSystem.current.TakeArea(new BoundsInt(Vector3Int.left + Vector3Int.down, Vector3Int.one * 2));
+     /*   #region 2x2 tiles on top of the island  TO CHECK, TILE WORKS ON THE CORNER
+       // keep the 2x2 tiles on top for building //NOTE: using FillBow doesn't work :'(
+        islandTilemap.SetTile(Vector3Int.zero, UIManager.GetGroundRule(1));
+        if (!islandTiles.ContainsKey(Vector3Int.zero)) islandTiles.Add(Vector3Int.zero, 1);
+        islandTilemap.SetTile(Vector3Int.left, UIManager.GetGroundRule(1));
+        if (!islandTiles.ContainsKey(Vector3Int.left)) islandTiles.Add(Vector3Int.left, 1);
+        islandTilemap.SetTile(Vector3Int.down, UIManager.GetGroundRule(1));
+        if (!islandTiles.ContainsKey(Vector3Int.down)) islandTiles.Add(Vector3Int.down, 1);
+        islandTilemap.SetTile(Vector3Int.down + Vector3Int.left, UIManager.GetGroundRule(1));
+        if (!islandTiles.ContainsKey(Vector3Int.down + Vector3Int.left)) islandTiles.Add(Vector3Int.down + Vector3Int.left, 1);
+        GridBuildingSystem.current.TakeArea(TileType.White , new BoundsInt(Vector3Int.left + Vector3Int.down, Vector3Int.one * 2));
         #endregion
-
+     */
 
         UIManager.current.inventoryUI.changeBoundsEvent.Raise();
     }
@@ -231,7 +207,8 @@ public class IslandBuilder : MonoBehaviour
     /// </summary>
     public void RemoveRock(Vector3Int posOnTilemap)
     {
-        AddRock(); //count in inventory
+        RemoveRockCounter(islandTiles.Count - 1);
+    //    AddRock(islandTiles.Count); //count in inventory , to revesit
         islandTiles.Remove(posOnTilemap);
         islandTilemap.SetTile(posOnTilemap, null);
         GridBuildingSystem.current.tempTilemap.SetTile(posOnTilemap, null);
@@ -277,7 +254,7 @@ public class IslandBuilder : MonoBehaviour
 
             //animate & destroy
             objToRemove.ReplaceInInventory();
-            SaveRocks();
+
             //to do : animation ? plouf ?
         }
     }
@@ -331,8 +308,8 @@ public class IslandBuilder : MonoBehaviour
     void Start()
     {
         InitializePlaceholderTilemap();
-        LoadRocks();
         UpdateRocks();
+        LoadRocks();
         if (!GridBuildingSystem.tileBases.ContainsKey(TileType.Plus))
             GridBuildingSystem.tileBases.Add(TileType.Plus, plusTile);
         if (!GridBuildingSystem.tileBases.ContainsKey(TileType.Minus))
@@ -435,29 +412,71 @@ public class IslandBuilder : MonoBehaviour
     /// <summary>
     /// Add rock to counter <i>rocksRemaining</i>.
     /// </summary>
-    private void AddRock()
+    private void AddRock(int rocksRemaining)
     {
-        Database.Instance.userData.rocksRemaining++;
+       
+        rocksRemaining++;
+        
         UpdateRocks();
+        SaveRocks();
     }
 
     /// <summary>
     /// Remove rock to counter <i>rocksRemaining</i>.
     /// </summary>
-    private void RemoveRockCounter()
+    private void RemoveRockCounter(int rocksRemaining)
     {
-        Database.Instance.userData.rocksRemaining--;
-        if (Database.Instance.userData.rocksRemaining <= 0) GridBuildingSystem.current.tempTilemap.color = new Color(1, 1, 1, 0.3f);
-        UpdateRocks();
+        
+       // int rocksRemaining = islandTiles.Count;
+        rocksRemaining--; 
+            // Additional logic as needed, for example:
+            if (islandTiles.Count <= 0) GridBuildingSystem.current.tempTilemap.color = new Color(1, 1, 1, 0.3f);
+
+            UpdateRocks();
+            SaveRocks();
+         
+        
     }
+
     internal void UpdateRocks()
     {
-        int nbrRocks = Database.Instance.userData.rocksRemaining;
+        int nbrRocks = islandTiles.Count;
         UIManager.current.inventoryUI.rocksRemainingText.text = nbrRocks + "";
         if (nbrRocks >= listImgRocks.Count) imgRocks.sprite = listImgRocks[^1];
         else imgRocks.sprite = listImgRocks[nbrRocks];
+       // SaveRocks();
+    }
 
-        SaveRocks();
+
+    public void SaveRocks()
+    {
+        RockData rockData = new RockData();
+        foreach (var item in islandTiles)
+        {
+           // rockData.rocks.Add(new RockInfo(item.Key.x, item.Key.y, item.Value));
+        }
+
+        string json = JsonConvert.SerializeObject(rockData, Formatting.Indented);
+        File.WriteAllText(rocksRemainingFilePath, json);
+    }
+
+    public void LoadRocks()
+    {
+        if (File.Exists(rocksRemainingFilePath))
+        {
+            string json = File.ReadAllText(rocksRemainingFilePath);
+            RockData rockData = JsonConvert.DeserializeObject<RockData>(json);
+
+            islandTiles.Clear();
+            foreach (var rock in rockData.rocks)
+            {
+                Vector3Int position = new Vector3Int(rock.x, rock.y, 0); // Assuming Z is always 0 for your tiles
+                //islandTiles[position] = rock.rockType;
+            }
+
+            // Now you can use LoadIslandTiles() or similar to reflect these changes in the game world
+            LoadIslandTiles();
+        }
     }
 
     #endregion

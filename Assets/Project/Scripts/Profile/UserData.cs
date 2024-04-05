@@ -1,19 +1,39 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using Unity.VisualScripting;
 using System.IO;
+using System;
+
+[System.Serializable]
+
+
 
 [CreateAssetMenu(menuName = "ScriptableObject/User Data")]
 public class UserData : ScriptableObject
 {
+    private static UserData _instance;
+    public static UserData instance
+    {
+        get
+        {
+            if (!_instance)
+                Debug.Log("instance to add");
+            return _instance;
+        }
+    }
+    #region Variables
 
 
-[Header("Profil")]
+
+    [Header("Profil")]
     public AccountType accountType;
     public byte tutorialStep; //0 mean not started ; 1 mean finished first step ; ...
-
+    public string id;
     public event OnVariableChangeDelegate OnVariableChange = delegate { };
     public delegate void OnVariableChangeDelegate(int gold);
     [SerializeField] private int Gold;
+
+
     public int gold
     {
         get => Gold;
@@ -23,6 +43,8 @@ public class UserData : ScriptableObject
             int difference = value - Gold;
             Gold = value;
             OnVariableChange(difference);
+            SaveGold();
+
         }
     }
     public string title;
@@ -31,6 +53,7 @@ public class UserData : ScriptableObject
     [Header("Builder")]
     public Vector3Int buildingPlacement;
     public List<ItemPlacement> inventory = new();
+
     public int rocksRemaining; //rocks availables for building
     //public Vector3Int homePlacement;
     [TextArea(4, 200)]
@@ -41,6 +64,10 @@ public class UserData : ScriptableObject
     [Header("Stats")]
     public int quizCompleted;
     public int totalGoldSpent;
+
+
+    //savedata
+
 
     public class TilePos
     {
@@ -78,9 +105,40 @@ public class UserData : ScriptableObject
         }
     }
 
-    /// <summary>
-    /// Remove an item from user inventory if exist. Return null if not found.
-    /// </summary>
+    #endregion
+
+    #region GoldSavingSytem
+
+    //Gold
+    private void OnEnable()
+    {
+        LoadGold();
+    }
+    public void SaveGold()
+    {
+        PlayerPrefs.SetInt("UserGold", gold);
+        PlayerPrefs.Save(); // Make sure to save PlayerPrefs changes
+    }
+
+    public void LoadGold()
+    {
+        if (PlayerPrefs.HasKey("UserGold"))
+        {
+            gold = PlayerPrefs.GetInt("UserGold");
+        }
+        else
+        {
+
+            SaveGold();
+        }
+        Debug.Log("you have gold " + PlayerPrefs.GetInt("UserGold"));
+
+    }
+
+    
+
+    #endregion
+
     public ItemPlacement RemoveItemInInventory(string id_inv)
     {
         ItemPlacement itemFound = null;
@@ -139,4 +197,19 @@ public class UserData : ScriptableObject
         }
         return number;
     }
+
+
+    public void ResetUserData()
+    {
+
+        inventory.Clear();
+        gold = 20;
+        totalGoldSpent = 0;
+        rocksRemaining = 11;
+        SaveDataInventory.Instance.SaveInventoryToLocal();
+        Database.Instance.SavePlayerDataToLocal();
+
+    }
+
+    
 }
