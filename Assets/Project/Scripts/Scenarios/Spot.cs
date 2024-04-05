@@ -9,6 +9,7 @@ public class Spot : Interactable
     [SerializeField] private GameObject loseAnimation;
     [SerializeField] private GameObject neutralSpot;
     private Collider2D thiscollider;
+    public GameObject questionPanel;
 
     private void Awake()
     {
@@ -20,7 +21,8 @@ public class Spot : Interactable
     protected override void Interact(bool centerOnObject = true)
     {
         base.Interact(false);
-        ScenarioManager.Instance?.LaunchStage(ScenarioManager.Instance.ActiveScenario.GetQuizOfStep(StepIndex));
+        questionPanel.SetActive(true);
+       // ScenarioManager.Instance?.LaunchStage(ScenarioManager.Instance.ActiveScenario.GetQuizOfStep(StepIndex));
     }
 
     // Change animation state of the spot

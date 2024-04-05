@@ -53,7 +53,7 @@ public class ScenarioManager : MonoBehaviour
     private IEnumerator Start()
     {
         //sound
-        PlayAudio.Instance.PlayMusic(PlayAudio.Instance.bank.musicScenario);
+      //  PlayAudio.Instance.PlayMusic(PlayAudio.Instance.bank.musicScenario);
         //PlayAudio.Instance.PlayMusic(PlayAudio.Instance.bank.beach, "fx");
 
         stagePanel.gameObject.SetActive(false);
@@ -173,33 +173,37 @@ public class ScenarioManager : MonoBehaviour
 
     public void OpenReward()
     {
-        if (ActiveScenario.Successes <= 1 && ActiveScenario.RewardReceived == 0)
-        {
-            //PlayAudio.Instance?.PlayOneShot(PlayAudio.Instance.bank.celebration);
-            ScenarioIsle.SetActiveChestVFX(true);
-            StartCoroutine(OpenRewardCoroutine());
+       // ScenarioIsle.SetActiveChestVFX(true);
+        StartCoroutine(OpenRewardCoroutine());
 
-        }
-        else if (ActiveScenario.Successes == 2 && ActiveScenario.RewardReceived == 1)
-        {
-            ScenarioIsle.SetActiveChestVFX(true);
-            StartCoroutine(OpenRewardCoroutine());
 
-        }
-        else if (ActiveScenario.Successes == 3 && ActiveScenario.RewardReceived == 2)
-        {
-            ScenarioIsle.SetActiveChestVFX(true);
-            StartCoroutine(OpenRewardCoroutine());
+        //if (ActiveScenario.Successes <= 1 && ActiveScenario.RewardReceived == 0)
+        //{
+        //    //PlayAudio.Instance?.PlayOneShot(PlayAudio.Instance.bank.celebration);
+        //    ScenarioIsle.SetActiveChestVFX(true);
+        //    StartCoroutine(OpenRewardCoroutine());
 
-        }
-        else
-        {
-            if (ActiveScenario.Successes <= 0)
-            {
-                if (helperDialogHidden) PlayAudio.Instance?.PlayOneShot(PlayAudio.Instance.bank.fail);
-                ShowDialog("Avant de pouvoir ouvrir ce coffre, tu dois répondre correctement à tous les quiz !");
-            }
-        }
+        //}
+        //else if (ActiveScenario.Successes == 2 && ActiveScenario.RewardReceived == 1)
+        //{
+        //    ScenarioIsle.SetActiveChestVFX(true);
+        //    StartCoroutine(OpenRewardCoroutine());
+
+        //}
+        //else if (ActiveScenario.Successes == 3 && ActiveScenario.RewardReceived == 2)
+        //{
+        //    ScenarioIsle.SetActiveChestVFX(true);
+        //    StartCoroutine(OpenRewardCoroutine());
+
+        //}
+        //else
+        //{
+        //    if (ActiveScenario.Successes <= 0)
+        //    {
+        //        if (helperDialogHidden) PlayAudio.Instance?.PlayOneShot(PlayAudio.Instance.bank.fail);
+        //        ShowDialog("Avant de pouvoir ouvrir ce coffre, tu dois répondre correctement à tous les quiz !");
+        //    }
+        //}
     }
 
 
@@ -231,7 +235,7 @@ public class ScenarioManager : MonoBehaviour
         ActiveScenario.Restarted++;
 
         // Remove quiz progress for the current scenario
-        StartCoroutine(Database.Instance?.RemoveQuizProgress(GetActiveScenarioId()));
+   //     StartCoroutine(Database.Instance?.RemoveQuizProgress(GetActiveScenarioId()));
 
         // Call the method to handle actions after leaving the reward scene
         HandleAfterRewardScene();
@@ -253,19 +257,19 @@ public class ScenarioManager : MonoBehaviour
     private IEnumerator SaveAndReturnCoroutine()
     {
 
-        yield return StartCoroutine(Database.Instance?.UpdateStudentScenario(ActiveScenario));
-
+       // yield return StartCoroutine(Database.Instance?.UpdateStudentScenario(ActiveScenario));
+        yield return null;
         // Check if the player is in the reward scene
-        if (inRewardScene)
-        {
-            // Call the method to handle actions after leaving the reward scene
-            HandleAfterRewardScene();
-        }
-
+        //if (inRewardScene)
+        //{
+        //    // Call the method to handle actions after leaving the reward scene
+        //    HandleAfterRewardScene();
+        //}
+        SceneManager.LoadScene(sceneController.HomeScene);
         // Reset the flag after the logo transition is complete
         logoTransitionInProgress = false;
-
-        LogoTransition.Instance?.StartCoroutine(LogoTransition.Instance.LoadSceneAfterCoroutines(sceneController.PreviousScene, "Embarquement immédiat !"));
+        Debug.Log("return");
+        LogoTransition.Instance?.StartCoroutine(LogoTransition.Instance.LoadSceneAfterCoroutines(sceneController.MissionScene, "Embarquement immédiat !"));
     }
 
 

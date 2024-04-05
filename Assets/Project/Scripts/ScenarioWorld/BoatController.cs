@@ -101,12 +101,12 @@ public class BoatController : MonoBehaviour
         if (rigidbody2d.velocity != Vector2.zero && !emission.enabled)
         {
             emission.enabled = true;
-            audioSource.mute = false;
+            //audioSource.mute = false;
         }
         else if (rigidbody2d.velocity == Vector2.zero && emission.enabled)
         {
             emission.enabled = false;
-            audioSource.mute = true;
+            //audioSource.mute = true;
         }
 
         eightDirSprite.SetSpriteForRendererWithDirection(rigidbody2d.velocity, spriteRenderer, false);

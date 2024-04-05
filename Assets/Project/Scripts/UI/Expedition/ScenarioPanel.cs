@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class ScenarioPanel : MonoBehaviour
 {
     private Scenario selectedScenario;
@@ -41,21 +41,24 @@ public class ScenarioPanel : MonoBehaviour
     {
         if (selectedScenario != null)
         {
-            yield return StartCoroutine(Database.Instance?.GetQuizzes(selectedScenario));
             CrossSceneInformation.SelectedScenario = selectedScenario;
             sceneController.LoadScenarioScene();
+            yield return StartCoroutine(Database.Instance?.GetQuizzes(selectedScenario));
+           
         }
     }
 
 
     public void LaunchScenarioWithTransition()
     {
-        if (selectedScenario != null)
-        {
-            CrossSceneInformation.SelectedScenario = selectedScenario;
-            BoatController.Instance?.SaveMyPosition_ScenarioWorld();
-            LogoTransition.Instance?.StartCoroutine(LogoTransition.Instance.LoadSceneAfterCoroutines(sceneController.ScenarioScene, "Chargement des quiz", Database.Instance.GetQuizzes(selectedScenario)));
-        }
+       // LogoTransition.Instance?.StartCoroutine(LogoTransition.Instance.LoadSceneAfterCoroutines(sceneController.ScenarioScene, "Chargement des quiz", Database.Instance.GetQuizzes(selectedScenario)));
+        SceneManager.LoadScene(sceneController.ScenarioScene);
+        //if (selectedScenario != null)
+        //{
+        //    CrossSceneInformation.SelectedScenario = selectedScenario;
+        //    BoatController.Instance?.SaveMyPosition_ScenarioWorld();
+        //    LogoTransition.Instance?.StartCoroutine(LogoTransition.Instance.LoadSceneAfterCoroutines(sceneController.ScenarioScene, "Chargement des quiz", Database.Instance.GetQuizzes(selectedScenario)));
+        //}
     }
 
     private void FillScenarioPanel(Scenario scenario)
