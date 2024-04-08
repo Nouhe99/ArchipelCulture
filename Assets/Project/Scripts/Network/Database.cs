@@ -56,8 +56,6 @@ public class Database : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            
-           // LoadPlayerDataFromLocal(); // Load player data at start
             itemsList.UpdateDictionnary(); //load shop items
         }
         else
@@ -72,30 +70,30 @@ public class Database : MonoBehaviour
   
 
 
-    public void LoadUserDataFromLocal()
-    {
-        string filePath = Application.persistentDataPath + "/userData.json";
-        if (File.Exists(filePath))
-        {
-            string jsonData = File.ReadAllText(filePath);
-            JsonUtility.FromJsonOverwrite(jsonData, this);
-        }
-        else
-        {
-            Debug.Log("No existing UserData found. Initializing new player data.");
-            userData.ResetUserData();
-        }
-        userData.LoadGold();
+    //public void LoadUserDataFromLocal()
+    //{
+    //    string filePath = Application.persistentDataPath + "/userData.json";
+    //    if (File.Exists(filePath))
+    //    {
+    //        string jsonData = File.ReadAllText(filePath);
+    //        JsonUtility.FromJsonOverwrite(jsonData, this);
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("No existing UserData found. Initializing new player data.");
+    //        userData.ResetUserData();
+    //    }
+    //    userData.LoadGold();
         
-    }
+    //}
     
 
     #region NewSavingSystem
-    public void SavePlayerDataToLocal()
-    {
-        string jsonData = JsonUtility.ToJson(userData, true);
-        File.WriteAllText(Application.persistentDataPath + "/playerData.json", jsonData);
-    }
+    //public void SavePlayerDataToLocal()
+    //{
+    //    string jsonData = JsonUtility.ToJson(userData, true);
+    //    File.WriteAllText(Application.persistentDataPath + "/playerData.json", jsonData);
+    //}
 
     
     #endregion

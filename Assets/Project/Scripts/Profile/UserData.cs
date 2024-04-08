@@ -117,7 +117,7 @@ public class UserData : ScriptableObject
     public void SaveGold()
     {
         PlayerPrefs.SetInt("UserGold", gold);
-        PlayerPrefs.Save(); // Make sure to save PlayerPrefs changes
+        PlayerPrefs.Save(); 
     }
 
     public void LoadGold()
@@ -205,9 +205,9 @@ public class UserData : ScriptableObject
         inventory.Clear();
         gold = 20;
         totalGoldSpent = 0;
-        rocksRemaining = 11;
+        rocksRemaining = 10;
         SaveDataInventory.Instance.SaveInventoryToLocal();
-        Database.Instance.SavePlayerDataToLocal();
+        GameManager.Instance.SaveUserData();
 
     }
 

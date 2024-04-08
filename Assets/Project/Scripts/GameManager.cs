@@ -5,6 +5,7 @@ using System.IO;
 using System;
 using UnityEngine.SceneManagement;
 
+
 [System.Serializable]
 public class UserConfig
 {
@@ -34,14 +35,21 @@ public class GameManager : MonoBehaviour
 
         userConfigPath = Path.Combine(Application.persistentDataPath, "userConfig.json");
         userDataPath = Path.Combine(Application.persistentDataPath, "userData.json");
+        LoadDatas();
+        SceneManager.sceneLoaded += OnSceneLoaded;
 
-        
+
+    }
+
+ 
+
+    private void LoadDatas()
+    {
         LoadUserData();
         LoadUserConfig();
         SaveDataInventory.Instance.LoadInventoryFromLocal();
     }
-
-    private void LoadUserData()
+    public void LoadUserData()
     {
         if (File.Exists(userDataPath))
         {
@@ -52,15 +60,17 @@ public class GameManager : MonoBehaviour
         else
         {
             userData = new UserData();
+            userData.ResetUserData();
             SaveUserData();
         }
     }
 
-    private void SaveUserData()
+    public void SaveUserData()
     {
         string json = JsonUtility.ToJson(userData);
         File.WriteAllText(userDataPath, json);
     }
+
 
     void LoadUserConfig()
     {
@@ -101,7 +111,9 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Database.Instance.LoadUserDataFromLocal();
+            //Database.Instance.LoadUserDataFromLocal();
+            LoadUserData();
+
 
 
         }
@@ -140,6 +152,21 @@ public class GameManager : MonoBehaviour
             Debug.Log("All JSON files deleted. Restarting game...");
             // reload the scene or restart the game logic as needed
         }
+
+    }
+
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Home")
+        {
+            LoadDatas();
+        }
+    }
+
+    void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded; // Unsubscribe from the sceneLoaded event.
     }
 }
 

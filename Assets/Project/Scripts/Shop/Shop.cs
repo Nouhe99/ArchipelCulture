@@ -104,7 +104,7 @@ public class Shop : MonoBehaviour
         Database.Instance.userData.totalGoldSpent += currentPrice;
         SaveDataInventory.Instance.AddBuyObj(currentItem);//store item id for update
         UIManager.current.inventoryUI.AddNewSlot(currentItem);
-        SaveDataInventory.Instance.UpdateItemBuyDatabaseLocal();
+        SaveDataInventory.Instance.UpdateItemBuyDatabaseLocal(currentItem);
         shopSlot.ResetSlot();
     }
 

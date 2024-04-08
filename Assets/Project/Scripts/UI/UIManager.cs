@@ -111,7 +111,6 @@ public class UIManager : MonoBehaviour
         #endregion
 
 
-        Debug.Log("started");
 
     }
 
@@ -160,6 +159,7 @@ public class UIManager : MonoBehaviour
 
                 // Add it to inventory
                 inventoryUI.AddNewSlot(refitem);
+                Debug.Log("addid slot");
                
 
             }
@@ -168,6 +168,8 @@ public class UIManager : MonoBehaviour
                 // Item is placed
                 // Instantiate it
                 GameObject tempObj = Instantiate(itemsList.GetItem(item.id), itemContener.transform);
+                Debug.Log("placed");
+
                 Item tempItem = tempObj.GetComponent<Item>();
                 tempItem.placed = true;
                 tempItem.area.position = refitem.area.position;
@@ -389,7 +391,6 @@ public class UIManager : MonoBehaviour
         if (shop.gameObject.activeInHierarchy) shop.gameObject.SetActive(false);
         if (!inventoryUI.gameObject.activeInHierarchy) inventoryUI.gameObject.SetActive(true);
         if (inventoryUI.sideBarOpen) inventoryUI.ShowBuildingPanel();
-
         if (!gameContent.activeInHierarchy) gameContent.SetActive(true);
     }
     public void OpenClosePanel(Panel window)
@@ -430,6 +431,8 @@ public class UIManager : MonoBehaviour
             case Panel.Expedition:
                 if (boatObject != null)
                 {
+                    SaveDataInventory.Instance.SaveInventoryToLocal();
+                    GameManager.Instance.SaveUserData();
                     boatObject.GetComponent<SpriteRenderer>().sprite = boatSpriteGoAway;
                     boatObject.GetComponent<GoingTo>().ChangeDirection(new Vector3(7, -2, 0));
                     boatObject.GetComponentInChildren<ParticleSystem>().Play();

@@ -61,15 +61,15 @@ public class SaveDataInventory1 : MonoBehaviour
 
     public void UpdateItemBuyDatabaseLocal()
     {
-        foreach (Item item in inventoryData.buyedObj)
-        {
-            // Directly add the bought item to the player's inventory
-            UserData.ItemPlacement newItemPlacement = new UserData.ItemPlacement(item.id, false, 0, 0, 0, GenerateNewInventoryId(), 0);
-            Database.Instance.userData.inventory.Add(newItemPlacement);
+        //foreach (Item item in inventoryData.buyedObj)
+        //{
+        //    // Directly add the bought item to the player's inventory
+        //    UserData.ItemPlacement newItemPlacement = new UserData.ItemPlacement(item.id, false, 0, 0, 0, GenerateNewInventoryId(), 0);
+        //    Database.Instance.userData.inventory.Add(newItemPlacement);
 
-            // Optionally, update UI or any other game elements as needed
-            // For example, UIManager.current.inventoryUI.AddNewSlot(item);
-        }
+        //    // Optionally, update UI or any other game elements as needed
+        //    // For example, UIManager.current.inventoryUI.AddNewSlot(item);
+        //}
 
         // Clear the list of bought items as they've been processed
        // inventoryData.buyedObj.Clear();
@@ -166,7 +166,7 @@ public class SaveDataInventory1 : MonoBehaviour
 
     public void AddBuyObj(Item newid)
     {
-        inventoryData.buyedObj.Add(newid);
+       // inventoryData.buyedObj.Add(newid);
         SaveInventoryToLocal(); // Save inventory data after modification
         //if (FindObjectOfType<UIManager>()) UIManager.current.giftsManager.newitem = true;
     }
